@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  color: #fdfdfc;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footerClass {
+  list-style: none;
+  text-decoration: none;
+  background-color: #7e24e2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.textColor {
+  color: #d18ad0 !important;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
+.bg {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #493396;
+}
+.bg1 {
+  min-height: 100vh;
+  background-color: #7e24e2;
+}
+.trianglify {
+  background-image: './images/trianglify.png';
+}
+.bgColor {
+  background-color: #493396;
+}
+.bgColor1 {
+  background-color: #7e24e2 !important;
+}
+.titleBlock {
+  height: 50vh;
+}
+.center {
+  display: block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+.homeDiv {
+  display: block;
+  margin: auto auto !important;
+  justify-content: center !important;
+  padding-top: 20vh;
+}
+ul {
+  list-style: none;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+}
+.title {
+  padding-top: 10vh;
+  font-size: 72px;
+}
+.title1 {
+  font-size: 72px;
+}
+.active {
+  /* background-color: #7e24e2 !important; */
+  color: #d18ad0 !important;
+  list-style: none;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ptoject */
+.ProjectCol {
+  max-height: 80vh;
+  max-width: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
 }
