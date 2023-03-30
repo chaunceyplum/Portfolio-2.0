@@ -16,6 +16,10 @@ const Contact = () => {
             Get In Touch
           </Container>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <Container>
           <Row>
             <Col xs={8} className='center'>

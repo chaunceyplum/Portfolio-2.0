@@ -30,6 +30,10 @@ const Project = () => {
             </Row>
           </Container>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <Container>
           <Row>
             {ProjectList.map((k, i) => {

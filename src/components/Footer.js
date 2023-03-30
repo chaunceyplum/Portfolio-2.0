@@ -29,7 +29,7 @@ const Footer = () => {
               <Row>
                 <Col xs={2} />
                 <Col xs={8}>
-                  <Form>
+                  {/* <Form>
                     <FormGroup className='text-center'>
                       <FormLabel className='text-center'>
                         join our newsletter for free stuff
@@ -42,7 +42,7 @@ const Footer = () => {
                         placeholder='Enter Your Email Here!'
                       />
                     </FormGroup>
-                  </Form>
+                  </Form> */}
                 </Col>
                 <Col xs={2} />
               </Row>
@@ -113,8 +113,8 @@ const Footer = () => {
           <Col xs={12} md={4}>
             <ul className='footerClass'>
               <li className='text-center'>privacy policy</li>
-              <li className='text-center'>cookie policy</li>
-              <li className='text-center'>cookie settigns</li>
+              {/* <li className='text-center'>cookie policy</li>
+              <li className='text-center'>cookie settigns</li> */}
             </ul>
           </Col>
           <br />

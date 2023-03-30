@@ -21,9 +21,13 @@ const Home = () => {
               </span>
 
               <p>
-                I am an infectiously enthusiastic Full stack Web Developent
-                Bootcamp graduate with fundamental knowledge of web development.
-                Seeking to utilize advanced expertise in javaScript.
+                Im an enthusiastic Full Stack Web Developer with experience in
+                engineering scalable web applications. Proficient in a variety
+                of programming languages and web technologies, including HTML,
+                CSS, JavaScript, Python, Node.js, React, SQL and MongoDB.
+                Demonstrated ability to manage complex projects from concept to
+                deployment, with a focus on delivering high-quality,
+                user-friendly solutions.
               </p>
               <Button className='bgColor1'>
                 <Link activeClass='active' spy to='Project'>
