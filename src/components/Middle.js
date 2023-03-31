@@ -20,9 +20,9 @@ const Middle = () => {
         <Project />
       </div>
 
-      {/* <div id='Resume'>
+      <div id='Resume'>
         <Resume />
-      </div> */}
+      </div>
 
       <div id='Contact'>
         <Contact />

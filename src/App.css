@@ -3,6 +3,7 @@
   padding: 0;
   color: #fdfdfc;
 }
+
 .footerClass {
   list-style: none;
   text-decoration: none;
@@ -24,13 +25,14 @@
   background-image: './images/trianglify.png';
 }
 .bgColor {
-  background-color: #493396;
+  background-color: #493396 !important;
 }
 .bgColor1 {
   background-color: #7e24e2 !important;
 }
 .titleBlock {
-  height: 50vh;
+  height: 80vh;
+  object-fit: cover !important;
 }
 .center {
   display: block;
@@ -63,7 +65,11 @@ ul {
   list-style: none;
   text-decoration: none;
 }
-
+/* Contact */
+.Form {
+  background-color: #7e24e2;
+  border-radius: 25px;
+}
 /* Ptoject */
 .ProjectCol {
   max-height: 80vh;

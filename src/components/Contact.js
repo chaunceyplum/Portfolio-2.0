@@ -1,6 +1,15 @@
 import React from 'react'
 import { FormControl, FormLabel } from 'react-bootstrap'
-import { Card, Col, Container, Form, FormGroup, Row } from 'reactstrap'
+import {
+  Button,
+  Card,
+  Col,
+  Container,
+  Form,
+  FormGroup,
+  FormText,
+  Row,
+} from 'reactstrap'
 import scales from '../images/scales.svg'
 const Contact = () => {
   return (
@@ -20,24 +29,71 @@ const Contact = () => {
         <br />
         <br />
         <br />
-        <Container>
+        <Container className='Form'>
+          <br />
+          <br />
+          <br />
+          <br />
           <Row>
             <Col xs={8} className='center'>
               <div>
                 <Form>
-                  <FormGroup>
-                    <FormLabel>Enter your Email Here</FormLabel>
-                    <FormControl
-                      size='sm'
-                      type='email'
-                      placeholder='Enter Your Email Here!'
-                    ></FormControl>
-                  </FormGroup>
+                  <h3>
+                    Got a question or proposal, or just want to say hello? Go
+                    ahead.
+                  </h3>
+                  <Container>
+                    <Row>
+                      <Col>
+                        <FormGroup>
+                          <FormLabel>Your Name</FormLabel>
+                          <FormControl
+                            size='sm'
+                            type='email'
+                            placeholder='Enter Your Name Here!'
+                          ></FormControl>
+                        </FormGroup>
+                      </Col>
+                      <Col>
+                        <FormGroup>
+                          <FormLabel>Your Email</FormLabel>
+                          <FormControl
+                            size='sm'
+                            type='email'
+                            placeholder='Enter Your Email Here!'
+                          ></FormControl>
+                        </FormGroup>
+                      </Col>
+                    </Row>
+                  </Container>
+                  <Container>
+                    <FormGroup>
+                      <FormLabel>Your Message</FormLabel>
+                      <FormControl
+                        size='sm'
+                        type='textarea'
+                        placeholder='Enter Your Email Here!'
+                      ></FormControl>
+                    </FormGroup>
+                  </Container>
+                  <div className='center text-center'>
+                    <Button className='bgColor' type='submit'>
+                      Submit
+                    </Button>
+                  </div>
                 </Form>
               </div>
             </Col>
           </Row>
+          <br />
+          <br />
+          <br />
+          <br />
         </Container>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   )

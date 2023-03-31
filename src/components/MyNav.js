@@ -47,13 +47,13 @@ const MyNav = () => {
                     </Link>
                   </Nav.Link>
                 </Nav.Item>
-                {/* <Nav.Item>
+                <Nav.Item>
                   <Nav.Link className='text-center text-white'>
                     <Link activeClass='active' spy to='Resume'>
                       Resume
                     </Link>
                   </Nav.Link>
-                </Nav.Item> */}
+                </Nav.Item>
                 <Nav.Item>
                   <Nav.Link className='text-center text-white'>
                     <Link activeClass='active' spy to='Contact'>
