@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <div className='bg'>
         <div
-          className='titleBlock title textColor'
+          // className='titleBlock title textColor'
           style={{
             backgroundImage: `url(${trianglify})`,
             objectFit: 'cover',
@@ -34,12 +34,37 @@ const About = () => {
               growth of the company and my personal development.
             </p>
             <br />
-            <p>Currently I am a Technical Consultant for </p>
+            <p>
+              I have a solid foundation in both front-end and back-end
+              development, which allows me to build complete web solutions from
+              start to finish. I am proficient in languages such as JavaScript,
+              HTML, CSS, and have experience with popular front-end frameworks
+              such as React. On the back-end, I am comfortable working with
+              Node.js, Express and databases like MySQL and MongoDB.
+            </p>
+            <br />
+            <p>
+              Throughout my career, I have had the opportunity to work on a
+              variety of projects ranging from small business websites to HTML
+              Email development to building Restful backend services.
+            </p>
+            <br />
+            <p>
+              In addition to technical skills, I am a problem solver, a critical
+              thinker, and a quick learner. I am always looking for ways to
+              improve my skills and stay up-to-date with the latest technologies
+              in the industry.
+            </p>
+            <br />
+            <p>
+              When I am not coding, you can find me exploring the outdoors,
+              playing video games or shopping. I am excited to continue my
+              journey as a Full Stack Developer and contribute to the
+              development of innovative web solutions.
+            </p>
           </Row>
           <br />
-          <Row></Row>
-          <br />
-          <Row></Row>
+
           <br />
           <br />
           <br />
