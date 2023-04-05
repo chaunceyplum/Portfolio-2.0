@@ -11,6 +11,7 @@ const Resume = () => {
           style={{
             backgroundImage: `url(${cheese})`,
             objectFit: 'cover',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <Container>

@@ -28,6 +28,13 @@ const MyNav = () => {
                 <Link spy to='Home' className='textColor'>
                   Chaunce.dev
                 </Link>
+                {/* <Nav.Item>
+                  <Nav.Link className='text-center text-white'>
+                    <Link activeClass='active' spy to='About'>
+                      About
+                    </Link>
+                  </Nav.Link>
+                </Nav.Item> */}
               </strong>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -47,13 +54,13 @@ const MyNav = () => {
                     </Link>
                   </Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Nav.Link className='text-center text-white'>
                     <Link activeClass='active' spy to='Resume'>
                       Resume
                     </Link>
                   </Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
                 <Nav.Item>
                   <Nav.Link className='text-center text-white'>
                     <Link activeClass='active' spy to='Contact'>

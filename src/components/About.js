@@ -11,7 +11,7 @@ const About = () => {
           // className='titleBlock title textColor'
           style={{
             backgroundImage: `url(${trianglify})`,
-            objectFit: 'cover',
+            objectFit: 'scaleDown',
           }}
         >
           <Container>
@@ -24,9 +24,8 @@ const About = () => {
         <br />
         <Container>
           <Row>
-            <h2> Chauncey Plummer</h2>
-            <br />
-            <br />
+            {/* <h2> Chauncey Plummer</h2> */}
+
             <p>
               My objective is to obtain a challenging position as a Full-Stack
               Developer in a dynamic company that allows me to use my advanced
@@ -45,8 +44,9 @@ const About = () => {
             <br />
             <p>
               Throughout my career, I have had the opportunity to work on a
-              variety of projects ranging from small business websites to HTML
-              Email development to building Restful backend services.
+              variety of projects including small business websites, metrics
+              dashboards, HTML Email development to building Restful backend
+              services .
             </p>
             <br />
             <p>

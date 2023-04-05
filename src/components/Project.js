@@ -46,7 +46,9 @@ const Project = () => {
                           <CardImg
                             alt='Card image '
                             src={k.image}
-                            width='80%'
+                            width='100%'
+                            height='100%'
+                            style={{ objectFit: 'cover' }}
                           />
                         </Card>
                       </Col>
@@ -59,22 +61,28 @@ const Project = () => {
                             <li>Project description: {k.description}</li>
                             <br />
                           </ul>
-                          <Button
-                            className=' text-white bgColor1'
-                            target='_blank'
-                            href={k.githubLink}
-                          >
-                            Link to github
-                          </Button>
-                          <br />
-                          <br />
-                          <Button
-                            className='btn text-white bgColor1'
-                            target='_blank'
-                            href={k.projectLink}
-                          >
-                            Link to Project
-                          </Button>
+                          <Container>
+                            <Row>
+                              <Col xs={6}>
+                                <Button
+                                  className=' text-white bgColor1'
+                                  target='_blank'
+                                  href={k.githubLink}
+                                >
+                                  Link to github
+                                </Button>
+                              </Col>
+                              <Col xs={6}>
+                                <Button
+                                  className='btn text-white bgColor1'
+                                  target='_blank'
+                                  href={k.projectLink}
+                                >
+                                  Link to Project
+                                </Button>
+                              </Col>
+                            </Row>
+                          </Container>
                         </div>
                       </Col>
                     </Row>

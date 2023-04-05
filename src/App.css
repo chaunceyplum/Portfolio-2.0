@@ -3,7 +3,14 @@
   padding: 0;
   color: #fdfdfc;
 }
-
+ul {
+  list-style: none;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+}
+p {
+  font-size: 1.5rem;
+}
 .footerClass {
   list-style: none;
   text-decoration: none;
@@ -31,7 +38,7 @@
   background-color: #7e24e2 !important;
 }
 .titleBlock {
-  height: 80vh;
+  height: 30vh;
   object-fit: cover !important;
 }
 .center {
@@ -47,11 +54,7 @@
   justify-content: center !important;
   padding-top: 20vh;
 }
-ul {
-  list-style: none;
-  padding: 0 0 0 0 !important;
-  margin: 0 0 0 0 !important;
-}
+
 .title {
   padding-top: 10vh;
   font-size: 72px;

@@ -8,9 +8,10 @@ const ProjectList = [
   {
     name: 'Lobby',
     stack: 'MERN',
-    technologies: 'Bootstrap, Redux-Toolkit, MongoDB, Express, ',
+    technologies:
+      'Bootstrap, Redux-Toolkit, MongoDB, Express, User Authentication,  ',
     description:
-      'Web app for gamers to find gamers to play games with. Backend Code can be found in the Classy Cutz backend app. ',
+      'Web app for gamers to find gamers to play games with. This app features user authentication and a post system where players can connect. Backend Code can be found in the Classy Cutz backend app. ',
     githubLink: 'https://github.com/chaunceyplum/Lobby',
     projectLink: 'https://findalobby.netlify.app/',
     image: lobby,

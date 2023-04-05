@@ -18,7 +18,6 @@ const Footer = () => {
       <Container sticky='bottom' className=''>
         <Row></Row>
         <Row>
-          <hr />
           <Col xs={12} md={4}>
             <br />
             <h3 className='text-center textColor'>Chaunce.dev</h3>
