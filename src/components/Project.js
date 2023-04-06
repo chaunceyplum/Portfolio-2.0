@@ -41,21 +41,25 @@ const Project = () => {
                 <Col xs={12} key={i}>
                   <Container>
                     <Row>
-                      <Col xs={12} md={6} className='ProjectCol'>
-                        <Card>
+                      <Col xs={12} lg={6} className='ProjectCol'>
+                        <Card style={{ borderRadius: '25px' }}>
                           <CardImg
                             alt='Card image '
                             src={k.image}
                             width='100%'
                             height='100%'
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'cover', borderRadius: '20px' }}
                           />
                         </Card>
                       </Col>
-                      <Col xs={12} md={6} className='ProjectCol'>
+
+                      <Col xs={12} lg={6} className='ProjectCol'>
                         <div className='text-center'>
-                          <h3 className=''> {k.name}</h3>
-                          <ul>
+                          <br />
+                          <h2 className=''>
+                            <strong>{k.name}</strong>
+                          </h2>
+                          <ul className='text'>
                             <li>stack: {k.stack}</li>
                             <li>Tech used: {k.technologies}</li>
                             <li>Project description: {k.description}</li>
@@ -65,7 +69,7 @@ const Project = () => {
                             <Row>
                               <Col xs={6}>
                                 <Button
-                                  className=' text-white bgColor1'
+                                  className=' text-white bgColor1 '
                                   target='_blank'
                                   href={k.githubLink}
                                 >

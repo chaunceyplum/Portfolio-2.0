@@ -25,7 +25,14 @@ const About = () => {
         <Container>
           <Row>
             {/* <h2> Chauncey Plummer</h2> */}
-
+            <p>
+              Im an enthusiastic Full Stack Web Developer with experience in
+              engineering scalable web applications. Proficient in a variety of
+              programming languages and web technologies, including HTML, CSS,
+              JavaScript, Python, Node.js, React, SQL and MongoDB. Demonstrated
+              ability to manage complex projects from concept to deployment,
+              with a focus on delivering high-quality, user-friendly solutions.
+            </p>
             <p>
               My objective is to obtain a challenging position as a Full-Stack
               Developer in a dynamic company that allows me to use my advanced

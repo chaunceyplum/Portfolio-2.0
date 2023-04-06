@@ -7,7 +7,7 @@ import Resume from './Resume'
 
 const Middle = () => {
   return (
-    <div>
+    <div className='bgColor'>
       <div id='Home'>
         <Home />
       </div>
