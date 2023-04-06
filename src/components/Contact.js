@@ -42,9 +42,9 @@ const Contact = () => {
     email: userPassword,
     message: userMessage,
   }
-  //const apiUrl = 'https://classycutzbackend.herokuapp.com/newportContactinfo'
+  const apiUrl = 'https://classycutzbackend.herokuapp.com/newportContactinfo'
 
-  const apiUrl = 'http://localhost:3007/newportContactinfo'
+  //const apiUrl = 'http://localhost:3007/newportContactinfo'
 
   const forceUpdateHandler = () => {
     this.forceUpdate()
