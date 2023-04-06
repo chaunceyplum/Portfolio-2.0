@@ -29,13 +29,13 @@ const Contact = () => {
         <br />
         <br />
         <br />
-        <Container className='Form'>
+        <Container>
           <br />
           <br />
           <br />
           <br />
           <Row>
-            <Col xs={8} className='center'>
+            <Col xs={6} className=' Form center'>
               <div>
                 <Form>
                   <h3>

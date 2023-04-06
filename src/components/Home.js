@@ -39,6 +39,7 @@ const Home = () => {
                         </Link>
                       </Button>
                     </Container>
+                    <br />
                   </Col>
                   <Col xs={12} md={4}>
                     <div className='center text-center'>

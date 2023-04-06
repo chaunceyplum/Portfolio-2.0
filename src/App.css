@@ -81,6 +81,7 @@ p {
 .Form {
   background-color: #7e24e2;
   border-radius: 25px;
+  padding: 50px 50px 50px 50px;
 }
 /* Ptoject */
 .ProjectCol {

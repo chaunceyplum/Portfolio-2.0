@@ -40,14 +40,14 @@ const About = () => {
               growth of the company and my personal development.
             </p>
             <br />
-            <p>
+            {/* <p>
               I have a solid foundation in both front-end and back-end
               development, which allows me to build complete web solutions from
               start to finish. I am proficient in languages such as JavaScript,
               HTML, CSS, and have experience with popular front-end frameworks
               such as React. On the back-end, I am comfortable working with
               Node.js, Express and databases like MySQL and MongoDB.
-            </p>
+            </p> */}
             <br />
             <p>
               Throughout my career, I have had the opportunity to work on a
