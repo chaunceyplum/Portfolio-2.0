@@ -85,7 +85,7 @@ p {
 }
 /* Ptoject */
 .ProjectCol {
-  max-height: 80vh;
+  max-height: 200vh;
   max-width: 50vh;
   display: flex;
   justify-content: center;
