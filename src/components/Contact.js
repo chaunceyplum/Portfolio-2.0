@@ -89,79 +89,85 @@ const Contact = () => {
           <br />
           <br />
           <Row>
-            <Col xs={6} className=' Form center'>
+            <Col xs={10} className=' Form center'>
               <div>
-                <Form>
-                  <h3>
-                    Got a question or proposal, or just want to say hello? Go
-                    ahead.
-                  </h3>
-                  <Container>
-                    <Row>
-                      <Col>
-                        <FormGroup>
-                          <FormLabel>Your Name</FormLabel>
-                          <FormControl
-                            size='sm'
-                            type='text'
-                            placeholder='Enter Your Name Here!'
-                            onChange={(e) => setUserEmail(e.target.value)}
-                          ></FormControl>
-                        </FormGroup>
-                      </Col>
-                      <Col>
-                        <FormGroup>
-                          <FormLabel>Your Email</FormLabel>
-                          <FormControl
-                            size='sm'
-                            type='email'
-                            placeholder='Enter Your Email Here!'
-                            onChange={(e) => setUserPassword(e.target.value)}
-                          ></FormControl>
-                        </FormGroup>
-                      </Col>
-                    </Row>
-                  </Container>
-                  <Container>
-                    <FormGroup>
-                      <FormLabel>Your Message</FormLabel>
-                      <FormControl
-                        size='sm'
-                        type='textarea'
-                        placeholder='Enter Your Email Here!'
-                        onChange={(e) => setUserMessage(e.target.value)}
-                      ></FormControl>
-                    </FormGroup>
-                  </Container>
-                  <Container>
-                    <Row>
-                      <Col>
-                        <div className='center text-center'>
-                          <Button
-                            className='bgColor'
-                            onClick={() => {
-                              clearBoth()
-                            }}
-                          >
-                            Cancel
-                          </Button>
-                        </div>
-                      </Col>
-                      <Col>
-                        <div className='center text-center'>
-                          <Button
-                            className='bgColor'
-                            onClick={(e) => {
-                              submitUser(e)
-                            }}
-                          >
-                            Submit
-                          </Button>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Container>
-                </Form>
+                <Container>
+                  <Form>
+                    <Container>
+                      <h3>
+                        Got a question or proposal, or just want to say hello?
+                        Go ahead.
+                      </h3>
+                    </Container>
+                    <br />
+                    <Container>
+                      <Row>
+                        <Col>
+                          <FormGroup>
+                            <FormLabel>Your Name</FormLabel>
+                            <FormControl
+                              size='sm'
+                              type='text'
+                              placeholder='Enter Your Name Here!'
+                              onChange={(e) => setUserEmail(e.target.value)}
+                            ></FormControl>
+                          </FormGroup>
+                        </Col>
+                        <Col>
+                          <FormGroup>
+                            <FormLabel>Your Email</FormLabel>
+                            <FormControl
+                              size='sm'
+                              type='email'
+                              placeholder='Enter Your Email Here!'
+                              onChange={(e) => setUserPassword(e.target.value)}
+                            ></FormControl>
+                          </FormGroup>
+                        </Col>
+                      </Row>
+                    </Container>
+                    <Container>
+                      <FormGroup>
+                        <FormLabel>Your Message</FormLabel>
+                        <FormControl
+                          size='sm'
+                          type='textarea'
+                          placeholder='Enter Your Email Here!'
+                          onChange={(e) => setUserMessage(e.target.value)}
+                        ></FormControl>
+                      </FormGroup>
+                    </Container>
+                    <br />
+                    <Container>
+                      <Row>
+                        <Col>
+                          <div className='center text-center'>
+                            <Button
+                              className='bgColor'
+                              onClick={() => {
+                                clearBoth()
+                              }}
+                            >
+                              Cancel
+                            </Button>
+                          </div>
+                        </Col>
+                        <Col>
+                          <div className='center text-center'>
+                            <Button
+                              className='bgColor'
+                              onClick={(e) => {
+                                submitUser(e)
+                              }}
+                            >
+                              Submit
+                            </Button>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </Form>
+                </Container>
               </div>
             </Col>
           </Row>

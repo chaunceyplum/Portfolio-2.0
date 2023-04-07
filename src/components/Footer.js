@@ -106,7 +106,7 @@ const Footer = () => {
         <Row>
           <hr />
           <Col xs={12} md={4}>
-            <p className='text-center'>©2023 Logo(logo) inc.</p>
+            <p className='text-center'>©2023 Chaunce.dev inc.</p>
           </Col>
           <Col xs={12} md={4} />
           <Col xs={12} md={4}>
