@@ -55,7 +55,7 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={4} className=' '>
             <br />
-            <h3 className='text-center'>useful links</h3>
+            <h3 className='text-center'>Useful Links</h3>
 
             <br />
             <ul className='footerClass '>
