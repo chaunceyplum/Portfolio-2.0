@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-scroll'
 import { Button, Col, Container, Row } from 'reactstrap'
 import trianglify from '../images/square.svg'
-import me from '../images/me1.svg'
+import me from '../images/logo.png'
 const Home = () => {
   const [userEmail, setUserEmail] = useState('')
   const [userPassword, setUserPassword] = useState('')

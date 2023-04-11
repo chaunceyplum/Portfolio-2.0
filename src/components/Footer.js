@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  Button,
   Col,
   Container,
   Form,
@@ -87,16 +88,30 @@ const Footer = () => {
             <h3 className='text-center'>Social Media</h3>
             <br />
             <ul className='footerClass'>
-              <li className='text-center'>
+              {/* <li className='text-center'>
                 <FaTwitter />
+              </li> */}
+              <br />
+              <li className='text-center'>
+                <Button
+                  href='https://github.com/chaunceyplum'
+                  className='bgColor'
+                  size='20em'
+                  variant='dark'
+                >
+                  <FaGithub />
+                </Button>
               </li>
               <br />
               <li className='text-center'>
-                <FaGithub />
-              </li>
-              <br />
-              <li className='text-center'>
-                <FaLinkedin />
+                <Button
+                  href='https://www.linkedin.com/in/chauncey-plummer-5457361bb/'
+                  className='bgColor'
+                  size='20em'
+                  variant='dark'
+                >
+                  <FaLinkedin />
+                </Button>
               </li>
               <br />
             </ul>
