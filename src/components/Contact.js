@@ -132,7 +132,7 @@ const Contact = () => {
                         <FormControl
                           size='sm'
                           type='textarea'
-                          placeholder='Enter Your Email Here!'
+                          placeholder='Enter a message here!'
                           onChange={(e) => setUserMessage(e.target.value)}
                         ></FormControl>
                       </FormGroup>
