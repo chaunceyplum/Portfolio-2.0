@@ -20,7 +20,7 @@ const Footer = () => {
         <Row>
           <Col xs={12} md={4}>
             <br />
-            <h3 className='text-center textColor'>Chaunce.dev</h3>
+            <h2 className='text-center textColor'>Chaunce.dev</h2>
             <br />
             <br />
 
@@ -42,6 +42,8 @@ const Footer = () => {
                       />
                     </FormGroup>
                   </Form> */}
+
+                  <p className='text-center'>©2023 Chaunce.dev inc.</p>
                 </Col>
                 <Col xs={2} />
               </Row>
@@ -105,13 +107,11 @@ const Footer = () => {
         </Row>
         <Row>
           <hr />
-          <Col xs={12} md={4}>
-            <p className='text-center'>©2023 Chaunce.dev inc.</p>
-          </Col>
+          <Col xs={12} md={4}></Col>
           <Col xs={12} md={4} />
           <Col xs={12} md={4}>
             <ul className='footerClass'>
-              <li className='text-center'>privacy policy</li>
+              {/* <li className='text-center'>privacy policy</li> */}
               {/* <li className='text-center'>cookie policy</li>
               <li className='text-center'>cookie settigns</li> */}
             </ul>
