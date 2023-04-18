@@ -10,8 +10,7 @@ const ProjectList = [
     name: 'Media Hive',
     stack: 'Next.JS',
     technologies: 'Bootstrap, Next.JS  ',
-    description:
-      'Frontend project built to show that I can build a project from a wireframe/design',
+    description: 'Frontend project built from a wireframe/design',
     githubLink: 'https://github.com/chaunceyplum/Portfolio-2.0',
     projectLink: 'https://mediahive.netlify.app/',
     image: mediaHive,
