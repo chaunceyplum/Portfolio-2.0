@@ -60,7 +60,7 @@ const Project = () => {
                             <strong>{k.name}</strong>
                           </h2>
                           <ul className='text'>
-                            <li>stack: {k.stack}</li>
+                            <li>Stack: {k.stack}</li>
                             <li>Tech used: {k.technologies}</li>
                             <li>Project description: {k.description}</li>
                             <br />

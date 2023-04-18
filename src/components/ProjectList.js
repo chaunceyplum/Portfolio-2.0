@@ -4,7 +4,18 @@ import game from '../images/gameHop.png'
 import crypto from '../images/cryptoApp.png'
 import famous from '../images/famous.png'
 import lobby from '../images/lobby.png'
+import mediaHive from '../images/MediaHive.png'
 const ProjectList = [
+  {
+    name: 'Media Hive',
+    stack: 'Next.JS',
+    technologies: 'Bootstrap, Next.JS  ',
+    description:
+      'Frontend project built to show that I can build a project from a wireframe/design',
+    githubLink: 'https://github.com/chaunceyplum/Portfolio-2.0',
+    projectLink: 'https://mediahive.netlify.app/',
+    image: mediaHive,
+  },
   {
     name: 'Lobby',
     stack: 'MERN',
