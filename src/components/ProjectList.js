@@ -56,16 +56,16 @@ const ProjectList = [
   //   projectLink: 'https://gamehop.netlify.app/',
   //   image: game,
   // },
-  {
-    name: 'Coincap Cryptocurrency App',
-    stack: 'React',
-    technologies: 'Bootstrap, Axios',
-    description:
-      'React app built to display the top 100 cryptocurrency coins using the CoinCap 2.0 REST API',
-    githubLink: 'https://github.com/chaunceyplum/GameHop',
-    projectLink: 'https://top100coinapp.netlify.app/',
-    image: crypto,
-  },
+  // {
+  //   name: 'Coincap Cryptocurrency App',
+  //   stack: 'React',
+  //   technologies: 'Bootstrap, Axios',
+  //   description:
+  //     'React app built to display the top 100 cryptocurrency coins using the CoinCap 2.0 REST API',
+  //   githubLink: 'https://github.com/chaunceyplum/GameHop',
+  //   projectLink: 'https://top100coinapp.netlify.app/',
+  //   image: crypto,
+  // },
   // {
   //   name: 'Famous Deli',
   //   stack: 'HTML, CSS',
