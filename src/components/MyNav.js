@@ -72,6 +72,7 @@ const MyNav = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+        <hr style={{ color: '#7E24E2', fontSize: '3rem' }} />
       </div>
     </div>
   )

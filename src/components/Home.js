@@ -10,8 +10,8 @@ const Home = () => {
   const [username, setUserName] = useState('')
   return (
     <div>
-      <div className='bg'>
-        <Container className='homeDiv '>
+      <div className='bg bg2'>
+        <Container className='homeDiv ' style={{}}>
           {/* <Col xs={2} /> */}
           <Col xs={12} className='center '>
             <div>
