@@ -19,7 +19,7 @@ const MyNav = () => {
 
   const toggle = () => setIsOpen(!isOpen)
   return (
-    <div className='bgColor'>
+    <div className='bgColor3'>
       <div>
         <Navbar fixed='top' className='bgColor text-white' expand='sm'>
           <Container className='text-white'>
@@ -72,7 +72,7 @@ const MyNav = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <hr style={{ color: '#7E24E2', fontSize: '3rem' }} />
+        {/* <hr style={{ color: '#7E24E2', fontSize: '3rem' }} /> */}
       </div>
     </div>
   )

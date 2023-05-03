@@ -43,6 +43,12 @@ p {
 .bgColor1 {
   background-color: #7e24e2 !important;
 }
+.bgColor3 {
+  background-color: #493396 !important;
+  opacity: 70%;
+  z-index: 1000;
+  position: sticky;
+}
 .titleBlock {
   height: 30vh;
   object-fit: cover !important;
@@ -79,6 +85,10 @@ p {
   color: #d18ad0 !important;
   list-style: none;
   text-decoration: none;
+}
+.index {
+  /* z-index: 0; */
+  position: relative;
 }
 /* Contact */
 .Form {

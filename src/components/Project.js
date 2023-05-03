@@ -38,7 +38,7 @@ const Project = () => {
           <Row>
             {ProjectList.map((k, i) => {
               return (
-                <Col xs={12} key={i}>
+                <Col xs={12} key={i} className='index'>
                   <Container>
                     <Row>
                       <Col xs={12} lg={6} className='ProjectCol'>
@@ -48,7 +48,10 @@ const Project = () => {
                             src={k.image}
                             width='100%'
                             height='100%'
-                            style={{ objectFit: 'cover', borderRadius: '20px' }}
+                            style={{
+                              objectFit: 'cover',
+                              borderRadius: '20px',
+                            }}
                           />
                         </Card>
                       </Col>
