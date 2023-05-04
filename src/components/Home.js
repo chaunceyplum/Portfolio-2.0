@@ -20,13 +20,13 @@ const Home = () => {
                   {/* <Col md={2} /> */}
                   <Col xs={12} md={8}>
                     {/* <span className='text center1 '> */}
-                    <span>Hi my name is</span>
+                    <span className='title2'>Hi my name is</span>
                     <h3 className='title1 textColor'>
                       <strong>
                         <i className='textColor'> Chauncey Plummer</i>
                       </strong>
                     </h3>
-                    <p>
+                    <p className='title2'>
                       Im an enthusiastic Full Stack Web Developer with
                       experience in engineering scalable web applications.
                     </p>
