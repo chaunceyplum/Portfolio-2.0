@@ -78,10 +78,10 @@ p {
   font-size: 72px;
 }
 .title1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   /* max-width: 50vw; */
 
-  padding-bottom: 10px;
+  /* padding-bottom: 5px; */
 }
 .title2 {
   font-size: 2rem;
