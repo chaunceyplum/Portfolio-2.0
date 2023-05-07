@@ -52,7 +52,12 @@ const Home = () => {
                       ></div> */}
                         <img
                           src={me}
-                          style={{ maxHeight: '40vh', maxWidth: '40vh' }}
+                          style={{
+                            maxHeight: '100%',
+                            maxWidth: '100%',
+                            // minWidth: '20vh',
+                            // minHeight: '20vh',
+                          }}
                         />
                       </Container>
                     </div>
