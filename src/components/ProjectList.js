@@ -28,9 +28,10 @@ const ProjectList = [
   },
   {
     name: 'Classy Cutz Front End',
-    stack: 'React',
-    technologies: 'Bootstrap, axios, React-router, React-Redux-Form ',
-    description: 'Barbershop landing page built using React. ',
+    stack: 'Next, Python, Flask, Postgres',
+    technologies: 'Bootstrap, Python, Flask, Postgres',
+    description:
+      'Barbershop landing page built using React.Users can authenticate and make appointments (still in progress) ',
     githubLink: 'https://github.com/chaunceyplum/ReactProject',
     projectLink: 'https://classycutz.netlify.app',
     image: classy,
@@ -50,7 +51,7 @@ const ProjectList = [
     stack: 'Python, Postgres',
     technologies: 'Flask',
     description:
-      'Used Python and Flask to build a backend server for my Classy Cutz Front End application',
+      'Used Python and Flask to build a backend server for my Classy Cutz Front End application (still in progress)',
     githubLink: 'https://github.com/chaunceyplum/hairbackend',
     projectLink: 'https://hairbackend-f9069fe5a798.herokuapp.com/',
     image: classyBack,

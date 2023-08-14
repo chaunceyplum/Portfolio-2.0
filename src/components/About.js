@@ -123,6 +123,7 @@ const About = () => {
                   <li>Email Development</li>
                   <li>Adobe Campaign</li>
                   <li>Adobe Campaign Standard</li>
+                  <li>XML Schema</li>
                 </ul>
               </div>
               <br />

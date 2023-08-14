@@ -42,18 +42,20 @@ const Project = () => {
                   <Container>
                     <Row>
                       <Col xs={12} lg={6} className='ProjectCol'>
-                        <Card style={{ borderRadius: '25px' }}>
-                          <CardImg
-                            alt='Card image '
-                            src={k.image}
-                            width='100%'
-                            height='100%'
-                            style={{
-                              objectFit: 'cover',
-                              borderRadius: '20px',
-                            }}
-                          />
-                        </Card>
+                        <a href={k.projectLink}>
+                          <Card style={{ borderRadius: '25px' }}>
+                            <CardImg
+                              alt='Card image '
+                              src={k.image}
+                              width='100%'
+                              height='100%'
+                              style={{
+                                objectFit: 'cover',
+                                borderRadius: '20px',
+                              }}
+                            />
+                          </Card>
+                        </a>
                       </Col>
 
                       <Col xs={12} lg={6} className='ProjectCol'>
