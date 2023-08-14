@@ -36,13 +36,23 @@ const ProjectList = [
     image: classy,
   },
   {
-    name: 'Classy Cutz Back End',
+    name: 'Lobby Backend',
     stack: 'Node',
     technologies: 'Express',
     description:
-      'Used Node and Express to build a REST API to display content on the portfolio page of the Classy Cutz front end',
+      'Used Node and Express to build some REST API to display content on my Lobby application. These apis handle authentication, user administration and allows for posts to be saved to the database',
     githubLink: 'https://github.com/chaunceyplum/ReactProjectBackend',
     projectLink: 'https://classycutzbackend.herokuapp.com/',
+    image: classyBack,
+  },
+  {
+    name: 'Classy Cutz Back End',
+    stack: 'Python, Postgres',
+    technologies: 'Flask',
+    description:
+      'Used Python and Flask to build a backend server for my Classy Cutz Front End application',
+    githubLink: 'https://github.com/chaunceyplum/hairbackend',
+    projectLink: 'https://hairbackend-f9069fe5a798.herokuapp.com/',
     image: classyBack,
   },
   // {
