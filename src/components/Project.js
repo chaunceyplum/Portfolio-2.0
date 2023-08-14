@@ -42,7 +42,7 @@ const Project = () => {
                   <Container>
                     <Row>
                       <Col xs={12} lg={6} className='ProjectCol'>
-                        <a href={k.projectLink}>
+                        <a href={k.projectLink} target='_blank'>
                           <Card style={{ borderRadius: '25px' }}>
                             <CardImg
                               alt='Card image '
