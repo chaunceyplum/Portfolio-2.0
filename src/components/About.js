@@ -70,11 +70,66 @@ const About = () => {
               development of innovative web solutions.
             </p>
           </Row>
+        </Container>
+        <Container>
+          <Row>
+            <div>
+              <h3 className='titleBlock title'>My Skills</h3>
+            </div>
+          </Row>
+
+          <Row className='bgColor'>
+            <Col className='text-center' xs={12} md={4}>
+              <div>
+                <h3 className='bgColor1'>Front end</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Next</li>
+                  <li>SASS</li>
+                  <li>Bootstrap</li>
+                  <li>Responsive Web Development</li>
+                </ul>
+              </div>
+              <br />
+            </Col>
+            <Col className='text-center' xs={12} md={4}>
+              <div>
+                <h3 className='bgColor1'>Back end</h3>
+                <ul>
+                  <li>Node</li>
+                  <li>Express.js</li>
+                  <li>MongoDB</li>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>SqlAlchemy</li>
+                  <li>Postgres</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <br />
+            </Col>
+            <Col className='text-center' xs={12} md={4}>
+              <div>
+                <h3 className='bgColor1'>Other</h3>
+                <ul>
+                  <li>Git</li>
+                  <li>Github</li>
+                  <li>Heroku</li>
+                  <li>Netlify</li>
+                  <li>Restful API's</li>
+                  <li>Email Development</li>
+                  <li>Adobe Campaign</li>
+                  <li>Adobe Campaign Standard</li>
+                </ul>
+              </div>
+              <br />
+            </Col>
+          </Row>
           <br />
 
-          <br />
-          <br />
-          <br />
           <br />
           <br />
         </Container>
