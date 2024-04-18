@@ -7,6 +7,12 @@ import Project from './components/Project'
 import About from './components/About'
 import Middle from './components/Middle'
 
+const tagManagerArgs = {
+  gtmId: 'GTM-WBR4M452',
+}
+
+TagManager.initialize(tagManagerArgs)
+
 function App() {
   return (
     <div className='App'>
