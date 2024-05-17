@@ -45,7 +45,7 @@ const Contact = () => {
   const apiUrl = 'https://classycutzbackend.herokuapp.com/newportContactinfo'
   const headers = {
   'Content-Type': 'application/json',
-  'Access-Control-Allow-Origin': *
+  'Access-Control-Allow-Origin': '*'
 }
   //const apiUrl = 'http://localhost:3007/newportContactinfo'
 
