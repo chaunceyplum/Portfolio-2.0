@@ -43,7 +43,10 @@ const Contact = () => {
     message: userMessage,
   }
   const apiUrl = 'https://classycutzbackend.herokuapp.com/newportContactinfo'
-
+  const headers = {
+  'Content-Type': 'application/json',
+  'Access-Control-Allow-Origin': *
+}
   //const apiUrl = 'http://localhost:3007/newportContactinfo'
 
   const forceUpdateHandler = () => {
@@ -51,7 +54,7 @@ const Contact = () => {
   }
   const logIn = async (user) => {
     try {
-      const res = await axios.post(`${apiUrl}`, user)
+      const res = await axios.post(`${apiUrl}`, user, {headers:headers})
 
       console.log(res.data)
 
