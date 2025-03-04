@@ -4,6 +4,8 @@ import { Link } from 'react-scroll'
 import { Button, Col, Container, Row } from 'reactstrap'
 import trianglify from '../images/square.svg'
 import me from '../images/logo.png'
+import ReactGA from 'react-ga'
+
 const Home = () => {
   const [userEmail, setUserEmail] = useState('')
   const [userPassword, setUserPassword] = useState('')

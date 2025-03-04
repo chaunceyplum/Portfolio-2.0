@@ -12,7 +12,11 @@ import {
 } from 'reactstrap'
 import axios from 'axios'
 import scales from '../images/scales.svg'
+import ReactGA from 'react-ga'
+
 const Contact = () => {
+  ReactGA.pageview(window.location.pathname + window.location.search)
+
   const [userEmail, setUserEmail] = useState('')
   const [userPassword, setUserPassword] = useState('')
   const [userMessage, setUserMessage] = useState('')
@@ -44,9 +48,9 @@ const Contact = () => {
   }
   const apiUrl = 'https://classycutzbackend.herokuapp.com/newportContactinfo'
   const headers = {
-  'Content-Type': 'application/json',
-  'Access-Control-Allow-Origin': '*'
-}
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+  }
   //const apiUrl = 'http://localhost:3007/newportContactinfo'
 
   const forceUpdateHandler = () => {
@@ -54,7 +58,7 @@ const Contact = () => {
   }
   const logIn = async (user) => {
     try {
-      const res = await axios.post(`${apiUrl}`, user, {headers:headers})
+      const res = await axios.post(`${apiUrl}`, user, { headers: headers })
 
       console.log(res.data)
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import cheese from '../images/cheese.svg'
+import ReactGA from 'react-ga'
 
 const Resume = () => {
   return (

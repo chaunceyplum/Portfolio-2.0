@@ -2,8 +2,11 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import trianglify from '../images/square.svg'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import ReactGA from 'react-ga'
 
 const About = () => {
+  ReactGA.pageview(window.location.pathname + window.location.search)
+
   return (
     <div>
       <div className='bg'>

@@ -12,7 +12,11 @@ import {
 } from 'reactstrap'
 import ProjectList from './ProjectList.js'
 import prism from '../images/prism.svg'
+import ReactGA from 'react-ga'
+
 const Project = () => {
+  ReactGA.pageview(window.location.pathname + window.location.search)
+
   return (
     <div>
       <div className='bg'>
