@@ -8,7 +8,7 @@ import Project from './components/Project'
 import About from './components/About'
 import Middle from './components/Middle'
 import TagManager from 'react-gtm-module'
-
+import ReactGA from 'react-ga4'
 // const tagManagerArgs = {
 //   gtmId: 'GTM-WBR4M452',
 // }
@@ -16,6 +16,8 @@ import TagManager from 'react-gtm-module'
 // TagManager.initialize(tagManagerArgs)
 
 function App() {
+  ReactGA.initialize('G-W7KWZ1ED18')
+
   useEffect(() => {
     const tagManagerArgs = {
       gtmId: 'GTM-WBR4M452',

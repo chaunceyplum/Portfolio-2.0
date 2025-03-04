@@ -88,9 +88,7 @@ const About = () => {
                   <li>JavaScript</li>
                   <li>React</li>
                   <li>Next</li>
-                  <li>SASS</li>
-                  <li>Bootstrap</li>
-                  <li>Responsive Web Development</li>
+                  <li>Email Development</li>
                 </ul>
               </div>
               <br />
@@ -104,7 +102,6 @@ const About = () => {
                   <li>MongoDB</li>
                   <li>Python</li>
                   <li>Flask</li>
-                  <li>SqlAlchemy</li>
                   <li>Postgres</li>
                   <li>SQL</li>
                 </ul>
@@ -115,15 +112,14 @@ const About = () => {
               <div>
                 <h3 className='bgColor1'>Other</h3>
                 <ul>
-                  <li>Git</li>
-                  <li>Github</li>
-                  <li>Heroku</li>
-                  <li>Netlify</li>
-                  <li>Restful API's</li>
-                  <li>Email Development</li>
+                  <li>Amazon Web Services</li>
+                  <li>Snowflake</li>
                   <li>Adobe Campaign</li>
-                  <li>Adobe Campaign Standard</li>
-                  <li>XML Schema</li>
+                  <li>Adobe Journey Optimizer</li>
+                  <li>Adobe Experience Platform</li>
+                  <li>Zeta Marketing Platform</li>
+                  <li>Apache Airflow</li>
+                  <li>Apache Kafka</li>
                 </ul>
               </div>
               <br />
