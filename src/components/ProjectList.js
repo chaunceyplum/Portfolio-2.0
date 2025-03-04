@@ -6,15 +6,15 @@ import famous from '../images/famous.png'
 import lobby from '../images/lobby.png'
 import mediaHive from '../images/MediaHive.png'
 const ProjectList = [
-  {
-    name: 'Media Hive',
-    stack: 'Next.JS',
-    technologies: 'Bootstrap, Next.JS  ',
-    description: 'Frontend project built from a wireframe/design',
-    githubLink: 'https://github.com/chaunceyplum/Portfolio-2.0',
-    projectLink: 'https://mediahive.netlify.app/',
-    image: mediaHive,
-  },
+  // {
+  //   name: 'Media Hive',
+  //   stack: 'Next.JS',
+  //   technologies: 'Bootstrap, Next.JS  ',
+  //   description: 'Frontend project built from a wireframe/design',
+  //   githubLink: 'https://github.com/chaunceyplum/Portfolio-2.0',
+  //   projectLink: 'https://mediahive.netlify.app/',
+  //   image: mediaHive,
+  // },
   {
     name: 'Lobby',
     stack: 'MERN',
@@ -26,16 +26,16 @@ const ProjectList = [
     projectLink: 'https://findalobby.netlify.app/',
     image: lobby,
   },
-  {
-    name: 'Classy Cutz Front End',
-    stack: 'Next, Python, Flask, Postgres',
-    technologies: 'Bootstrap, Python, Flask, Postgres',
-    description:
-      'Barbershop landing page built using React.Users can authenticate and make appointments (still in progress) ',
-    githubLink: 'https://github.com/chaunceyplum/ReactProject',
-    projectLink: 'https://classycutz.netlify.app',
-    image: classy,
-  },
+  // {
+  //   name: 'Classy Cutz Front End',
+  //   stack: 'Next, Python, Flask, Postgres',
+  //   technologies: 'Bootstrap, Python, Flask, Postgres',
+  //   description:
+  //     'Barbershop landing page built using React.Users can authenticate and make appointments (still in progress) ',
+  //   githubLink: 'https://github.com/chaunceyplum/ReactProject',
+  //   projectLink: 'https://classycutz.netlify.app',
+  //   image: classy,
+  // },
   {
     name: 'Lobby Backend',
     stack: 'Node',
@@ -46,16 +46,16 @@ const ProjectList = [
     projectLink: 'https://classycutzbackend.herokuapp.com/',
     image: classyBack,
   },
-  {
-    name: 'Classy Cutz Back End',
-    stack: 'Python, Postgres',
-    technologies: 'Flask',
-    description:
-      'Used Python and Flask to build a backend server for my Classy Cutz Front End application (still in progress)',
-    githubLink: 'https://github.com/chaunceyplum/hairbackend',
-    projectLink: 'https://hairbackend-f9069fe5a798.herokuapp.com/',
-    image: classyBack,
-  },
+  // {
+  //   name: 'Classy Cutz Back End',
+  //   stack: 'Python, Postgres',
+  //   technologies: 'Flask',
+  //   description:
+  //     'Used Python and Flask to build a backend server for my Classy Cutz Front End application (still in progress)',
+  //   githubLink: 'https://github.com/chaunceyplum/hairbackend',
+  //   projectLink: 'https://hairbackend-f9069fe5a798.herokuapp.com/',
+  //   image: classyBack,
+  // },
   // {
   //   name: 'GameHop',
   //   stack: 'React',

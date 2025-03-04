@@ -44,7 +44,9 @@ const Footer = () => {
                     </FormGroup>
                   </Form> */}
 
-                  <p className='text-center'>©2023 Chaunce.dev inc.</p>
+                  <p className='text-center' target='blank'>
+                    ©2025
+                  </p>
                 </Col>
                 <Col xs={2} />
               </Row>

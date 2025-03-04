@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import MyNav from './components/MyNav'
@@ -6,14 +7,21 @@ import Footer from './components/Footer'
 import Project from './components/Project'
 import About from './components/About'
 import Middle from './components/Middle'
+import TagManager from 'react-gtm-module'
 
-const tagManagerArgs = {
-  gtmId: 'GTM-WBR4M452',
-}
+// const tagManagerArgs = {
+//   gtmId: 'GTM-WBR4M452',
+// }
 
-TagManager.initialize(tagManagerArgs)
+// TagManager.initialize(tagManagerArgs)
 
 function App() {
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: 'GTM-WBR4M452',
+    }
+    TagManager.initialize(tagManagerArgs)
+  }, [])
   return (
     <div className='App'>
       <div>
