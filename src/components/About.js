@@ -29,48 +29,24 @@ const About = () => {
           <Row>
             {/* <h2> Chauncey Plummer</h2> */}
             <p>
-              Im an enthusiastic Full Stack Web Developer with experience in
-              engineering scalable web applications. Proficient in a variety of
-              programming languages and web technologies, including HTML, CSS,
-              JavaScript, Python, Node.js, React, SQL and MongoDB. Demonstrated
-              ability to manage complex projects from concept to deployment,
-              with a focus on delivering high-quality, user-friendly solutions.
+              I am a Data Engineer and Full-Stack Developer with experience in
+              building scalable data pipelines and web applications. Proficient
+              in SQL, Python, Apache Airflow, Kafka, Snowflake, PostgreSQL,
+              JavaScript, and React, I specialize in automating workflows,
+              integrating data sources, and developing user-friendly solutions.
             </p>
             <p>
-              My objective is to obtain a challenging position as a Full-Stack
-              Developer in a dynamic company that allows me to use my advanced
-              technical skills, creativity, and experience to contribute to the
-              growth of the company and my personal development.
+              I have led projects optimizing email deliverability, streamlining
+              version control in Adobe Campaign, and building real-time
+              marketing dashboards. I’ve also developed full-stack applications,
+              created preference centers for managing user data, and integrated
+              event tracking with Adobe Web SDK.{' '}
             </p>
-            <br />
-            {/* <p>
-              I have a solid foundation in both front-end and back-end
-              development, which allows me to build complete web solutions from
-              start to finish. I am proficient in languages such as JavaScript,
-              HTML, CSS, and have experience with popular front-end frameworks
-              such as React. On the back-end, I am comfortable working with
-              Node.js, Express and databases like MySQL and MongoDB.
-            </p> */}
-            <br />
             <p>
-              Throughout my career, I have had the opportunity to work on a
-              variety of projects including small business websites, metrics
-              dashboards, HTML Email development to building Restful backend
-              services .
-            </p>
-            <br />
-            <p>
-              In addition to technical skills, I am a problem solver, a critical
-              thinker, and a quick learner. I am always looking for ways to
-              improve my skills and stay up-to-date with the latest technologies
-              in the industry.
-            </p>
-            <br />
-            <p>
-              When I am not coding, you can find me exploring the outdoors,
-              playing video games or shopping. I am excited to continue my
-              journey as a Full Stack Developer and contribute to the
-              development of innovative web solutions.
+              Certified in Adobe Campaign and Adobe Journey Optimizer, I
+              continuously refine my skills to stay ahead in data and web
+              technologies. Outside of work, I enjoy exploring the outdoors,
+              playing video games, and shopping.
             </p>
           </Row>
         </Container>
