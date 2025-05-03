@@ -66,12 +66,20 @@ const Project = () => {
                         <div className='text-center'>
                           <br />
                           <h2 className=''>
-                            <strong>{k.name}</strong>
+                            <strong>{k.name ? k.name : ''}</strong>
                           </h2>
                           <ul className='text'>
-                            <li>Stack: {k.stack}</li>
-                            <li>Tech used: {k.technologies}</li>
-                            <li>Project description: {k.description}</li>
+                            {k.stack ? <li>Stack: {k.stack}</li> : ''}
+                            {k.technologies ? (
+                              <li>Tech used: {k.technologies}</li>
+                            ) : (
+                              ''
+                            )}
+                            {k.description ? (
+                              <li>Project description: {k.description}</li>
+                            ) : (
+                              ''
+                            )}
                             <br />
                           </ul>
                           <Container>
@@ -86,13 +94,24 @@ const Project = () => {
                                 </Button>
                               </Col>
                               <Col xs={6}>
-                                <Button
-                                  className='btn text-white bgColor1'
-                                  target='_blank'
-                                  href={k.projectLink}
-                                >
-                                  Link to Project
-                                </Button>
+                                {k.projectLink ? (
+                                  <Button
+                                    className='btn text-white bgColor1'
+                                    target='_blank'
+                                    href={k.projectLink}
+                                  >
+                                    Link to Project
+                                  </Button>
+                                ) : (
+                                  <Button
+                                    className='btn text-white bgColor1'
+                                    target='_blank'
+                                    href=''
+                                    disabled
+                                  >
+                                    Link to Project
+                                  </Button>
+                                )}
                               </Col>
                             </Row>
                           </Container>
