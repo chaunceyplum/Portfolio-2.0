@@ -34,7 +34,7 @@ const ProjectList = [
     technologies:
       'Bootstrap, Redux-Toolkit, MongoDB, Express, User Authentication,  ',
     description:
-      'Find a Lobby is a responsive, single-page web application built with React and powered by a custom Express.js API. It enables users to discover and join active online gaming lobbies in real time, displaying lobby data such as game titles, player counts, and regions. The backend API, which was developed from scratch, handles all data storage and retrieval, enabling real-time lobby updates and efficient communication with the frontend. Deployed via Netlify and hosted on a separate server for the backend, the application showcases full-stack development proficiency, including RESTful API design, client-server integration, and responsive UI/UX implementation.',
+      'Find a Lobby is a responsive, single-page web application built with React and powered by a custom Express.js API. It enables users to discover and join active online gaming lobbies in real time, displaying lobby data such as game titles, player counts, and regions. Deployed via Netlify and hosted on a separate server for the backend, the application showcases full-stack development proficiency, including RESTful API design, client-server integration, and responsive UI/UX implementation.',
     githubLink: 'https://github.com/chaunceyplum/Lobby',
     projectLink: 'https://findalobby.netlify.app/',
     image: lobby,
@@ -54,7 +54,7 @@ const ProjectList = [
     stack: 'Node',
     technologies: 'Express',
     description:
-      'The Find a Lobby backend is a lightweight, RESTful API built with Express.js and designed to support real-time lobby discovery and management for multiplayer games. It handles the full lifecycle of a lobby—from creation and retrieval to automatic cleanup of inactive sessions. The server exposes well-structured endpoints for creating, listing, and deleting lobbies, and includes logic to prune expired entries to ensure data accuracy and performance. Built with modular, maintainable code and hosted separately from the frontend, this backend demonstrates core backend engineering skills including route handling, custom logic implementation, and integration with frontend clients in a full-stack environment.',
+      'The Find a Lobby backend is a lightweight, RESTful API built with Express.js and designed to support real-time lobby discovery and management for multiplayer games. It handles the full lifecycle of a lobby—from creation and retrieval to automatic cleanup of inactive sessions.  Built with modular, maintainable code and hosted separately from the frontend, this backend demonstrates core backend engineering skills including route handling, custom logic implementation, and integration with frontend clients in a full-stack environment.',
     githubLink: 'https://github.com/chaunceyplum/ReactProjectBackend',
     projectLink: '',
     image: classyBack,
