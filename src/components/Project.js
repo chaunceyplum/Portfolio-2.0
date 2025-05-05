@@ -45,7 +45,7 @@ const Project = () => {
                 <Col xs={12} key={i} className='index'>
                   <Container>
                     <Row>
-                      <Col xs={12} lg={6} className='ProjectCol'>
+                      <Col xs={12} className='ProjectCol'>
                         <a href={k.projectLink} target='_blank'>
                           <Card style={{ borderRadius: '25px' }}>
                             <CardImg
@@ -62,7 +62,7 @@ const Project = () => {
                         </a>
                       </Col>
 
-                      <Col xs={12} lg={6} className='ProjectCol'>
+                      <Col xs={12} className='ProjectCol'>
                         <div className='text-center'>
                           <br />
                           <h2 className=''>
