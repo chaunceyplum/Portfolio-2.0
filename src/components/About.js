@@ -29,24 +29,34 @@ const About = () => {
           <Row>
             {/* <h2> Chauncey Plummer</h2> */}
             <p>
-              I am a Data Engineer and Full-Stack Developer with experience in
-              building scalable data pipelines and web applications. Proficient
-              in SQL, Python, Apache Airflow, Kafka, Snowflake, PostgreSQL,
-              JavaScript, and React, I specialize in automating workflows,
-              integrating data sources, and developing user-friendly solutions.
+              I am a Full-Stack Developer with experience in building scalable
+              data pipelines and web applications. Proficient in AWS, SQL,
+              Python, Flask/FastAPI, Apache Airflow, Kafka, Snowflake,
+              PostgreSQL, JavaScript, and React, I specialize in automating
+              workflows, integrating data sources, and developing user-friendly
+              solutions.
             </p>
             <p>
-              I have led projects optimizing email deliverability, streamlining
-              version control in Adobe Campaign, and building real-time
-              marketing dashboards. I’ve also developed full-stack applications,
-              created preference centers for managing user data, and integrated
-              event tracking with Adobe Web SDK.{' '}
+              I have led development across multiple email platform migrations,
+              managing the full lifecycle from data ingestion to template
+              implementation across various ESPs. My work includes building
+              real-time marketing dashboards for non-technical stakeholders,
+              developing preference management applications for recipients, and
+              using web SDKs to send behavioral events to customer data
+              platforms. I've architected data pipelines to demonstrate how
+              customer data flows from data warehouses and lakes to CDPs and
+              ESPs, enabling clear visualization of the activation path. I’ve
+              also used CDPs to build and activate audiences across channels for
+              targeted engagement. Additionally, I’ve implemented real-time
+              messaging in Adobe Campaign and Adobe Journey Optimizer, and
+              transformed batch campaigns into API-triggered, event-driven
+              journeys for a major U.S. telecom provider.
             </p>
             <p>
               Certified in Adobe Campaign and Adobe Journey Optimizer, I
               continuously refine my skills to stay ahead in data and web
-              technologies. Outside of work, I enjoy exploring the outdoors,
-              playing video games, and shopping.
+              technologies. Outside of work, I enjoy exploring the outdoors and
+              playing video games.
             </p>
           </Row>
         </Container>
