@@ -1,102 +1,77 @@
-import classy from '../images/ClassyCutz.png'
 import classyBack from '../images/ClassyCutzBack.png'
-import game from '../images/gameHop.png'
-import crypto from '../images/cryptoApp.png'
-import famous from '../images/famous.png'
 import lobby from '../images/lobby_2.png'
-import mediaHive from '../images/MediaHive.png'
 import snowrag from '../images/snowrag.png'
 import snowdiagram from '../images/snow_diagram.png'
+import snowflake from '../images/snowflake.png'
+import modernpipe from '../images/Modern_Pipe.png'
+// import datastack from '../images/datastack.png' // optional: replace with relevant diagram
 
 const ProjectList = [
   {
-    name: 'SNOW_RAG (front-end)',
-    stack: 'Next.JS',
-    technologies: 'Next.JS, Docker',
+    name: 'SNOW_RAG',
+    stack: 'Next.js, FastAPI, Docker, MongoDB, LLaMA 3.2',
+    technologies: 'Next.js, FastAPI, LangChain, Docker Compose, MongoDB',
     description:
-      'The front end of the application is built using Next.js, serving as the primary interface for users to interact with the RAG system. It provides a clean, responsive UI where users can input natural language queries related to Snowflake documentation. These queries are sent as API calls to the FastAPI backend, which handles the processing and retrieval workflow. The frontend handles both the request and response cycles, displaying AI-generated answers returned by the LLaMA model.',
-    githubLink:
-      'https://github.com/chaunceyplum/AI/tree/main/SNOW_RAG_FRONT/snow_rag_front',
+      'A full-stack RAG app that scrapes, embeds, and semantically retrieves Snowflake documentation using a local LLM.',
+    role: 'Built modular FastAPI services for ingestion and querying, and designed a responsive frontend for interactive querying.',
+    challenges:
+      'Handled token limits, long document chunking, and ensured responsive UI while managing large query payloads.',
+    impact:
+      'Enabled developers to intuitively search over 6000+ Snowflake docs without needing third-party APIs.',
     image: snowrag,
-  },
-  {
-    name: 'SNOW_RAG (back-end)',
-    stack: 'Fastapi, MongoDB, llama3.2, Docker',
-    technologies: 'Bootstrap, Next.JS  ',
-    description:
-      'The backend of this RAG (Retrieval-Augmented Generation) application is built as a modular, containerized system using Docker Compose. A central FastAPI server coordinates microservices for scraping, vectorizing, querying, and deleting documentation. Scraped Snowflake docs are embedded into vectors and stored in MongoDB, which serves as the vector database. User queries are processed through semantic search to retrieve the most relevant content, which is passed to a locally hosted LLaMA 3.2 model to generate context-aware responses. This architecture demonstrates best practices in microservices, vector search, and local LLM integration.',
+    architecture: snowdiagram,
     githubLink: 'https://github.com/chaunceyplum/AI/tree/main/SNOW_RAG',
-    image: snowdiagram,
+    projectLink: '',
   },
   {
-    name: 'Lobby',
-    stack: 'MERN',
+    name: 'Modern Data Stack Architecture',
+    stack: 'PostgreSQL, AWS, Apache Iceberg, Snowflake, Airflow',
     technologies:
-      'Bootstrap, Redux-Toolkit, MongoDB, Express, User Authentication,  ',
+      'RDS, Apache Airflow, S3, Apache Iceberg, Snowflake, Python, SQL',
     description:
-      'Find a Lobby is a responsive, single-page web application built with React and powered by a custom Express.js API. It enables users to discover and join active online gaming lobbies in real time, displaying lobby data such as game titles, player counts, and regions. Deployed via Netlify and hosted on a separate server for the backend, the application showcases full-stack development proficiency, including RESTful API design, client-server integration, and responsive UI/UX implementation.',
+      'End-to-end enterprise data pipeline that ingests transactional data from RDS into Iceberg tables on S3, then builds Snowflake analytical models.',
+    role: 'Engineered Airflow DAGs to orchestrate ingestion, built Iceberg tables from raw PostgreSQL data, and modeled analytics in Snowflake.',
+    challenges:
+      'Coordinating batch dataflow across multiple systems while maintaining schema evolution and data consistency.',
+    impact:
+      'Enabled scalable, decoupled ELT workflows with cost-efficient storage and high-performance Snowflake querying.',
+    image: modernpipe,
+    architecture: modernpipe,
+    githubLink: 'https://github.com/chaunceyplum/data-architecture',
+    projectLink: '',
+  },
+  {
+    name: 'Snowflake Scripts & dbt Processes',
+    stack: 'Snowflake, dbt',
+    technologies: 'SQL, dbt, Snowflake Scripting',
+    description:
+      'A centralized folder containing modular SQL scripts and dbt models for transforming and orchestrating Snowflake data.',
+    role: 'Created reusable SQL logic, implemented version-controlled models in dbt, and established a reliable transformation workflow.',
+    challenges:
+      'Managing model dependencies, implementing business logic cleanly, and maintaining up-to-date documentation.',
+    impact:
+      'Accelerated analytics delivery and ensured consistency across datasets by consolidating logic into one maintainable repo.',
+    image: snowflake,
+    architecture: '',
+    githubLink: 'https://github.com/chaunceyplum/DBT',
+    projectLink: '',
+  },
+  {
+    name: 'Lobby (Full Stack)',
+    stack: 'MERN',
+    technologies: 'MongoDB, Express, React, Node.js, Redux Toolkit, Bootstrap',
+    description:
+      'A real-time gaming lobby discovery web app with REST API backend, region/game filtering, and user authentication.',
+    role: 'Built both frontend and backend; implemented lobby lifecycle logic, user authentication, and responsive UI.',
+    challenges:
+      'Managing time-based lobby expiration, synchronizing auth state, and ensuring mobile-first responsiveness.',
+    impact:
+      'Provided a user-friendly way for gamers to find online lobbies without Discord or forums.',
+    image: lobby,
+    architecture: '',
     githubLink: 'https://github.com/chaunceyplum/Lobby',
     projectLink: 'https://findalobby.netlify.app/',
-    image: lobby,
   },
-  // {
-  //   name: 'Classy Cutz Front End',
-  //   stack: 'Next, Python, Flask, Postgres',
-  //   technologies: 'Bootstrap, Python, Flask, Postgres',
-  //   description:
-  //     'Barbershop landing page built using React.Users can authenticate and make appointments',
-  //   githubLink: 'https://github.com/chaunceyplum/ReactProject',
-  //   projectLink: 'https://classycutz.netlify.app',
-  //   image: classy,
-  // },
-  {
-    name: 'Lobby Backend',
-    stack: 'Node',
-    technologies: 'Express',
-    description:
-      'The Find a Lobby backend is a lightweight, RESTful API built with Express.js and designed to support real-time lobby discovery and management for multiplayer games. It handles the full lifecycle of a lobby—from creation and retrieval to automatic cleanup of inactive sessions.  Built with modular, maintainable code and hosted separately from the frontend, this backend demonstrates core backend engineering skills including route handling, custom logic implementation, and integration with frontend clients in a full-stack environment.',
-    githubLink: 'https://github.com/chaunceyplum/ReactProjectBackend',
-    projectLink: '',
-    image: classyBack,
-  },
-  // {
-  //   name: 'Classy Cutz Back End',
-  //   stack: 'Python, Postgres',
-  //   technologies: 'Flask',
-  //   description:
-  //     'Used Python and Flask to build a backend server for my Classy Cutz Front End application ',
-  //   githubLink: 'https://github.com/chaunceyplum/hairbackend',
-  //   projectLink: '',
-  //   image: classyBack,
-  // },
-  // {
-  //   name: 'GameHop',
-  //   stack: 'React',
-  //   technologies: 'Bootstrap, Axios, React-router',
-  //   description:
-  //     'Ecommerce game app built using react with a shopping cart component',
-  //   githubLink: 'https://github.com/chaunceyplum/GameHop',
-  //   projectLink: 'https://gamehop.netlify.app/',
-  //   image: game,
-  // },
-  // {
-  //   name: 'Coincap Cryptocurrency App',
-  //   stack: 'React',
-  //   technologies: 'Bootstrap, Axios',
-  //   description:
-  //     'React app built to display the top 100 cryptocurrency coins using the CoinCap 2.0 REST API',
-  //   githubLink: 'https://github.com/chaunceyplum/GameHop',
-  //   projectLink: 'https://top100coinapp.netlify.app/',
-  //   image: crypto,
-  // },
-  // {
-  //   name: 'Famous Deli',
-  //   stack: 'HTML, CSS',
-  //   technologies: 'Bootstrap',
-  //   description: 'Static website made using HTML, CSS and Bootstrap',
-  //   githubLink: 'https://github.com/chaunceyplum/project-1',
-  //   projectLink: 'https://chaunceyplum.github.io/project-1/',
-  //   image: famous,
-  // },
 ]
+
 export default ProjectList

@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Button,
   Card,
   CardBody,
-  CardHeader,
   CardImg,
-  CardImgOverlay,
   Col,
   Container,
   Row,
+  Collapse,
 } from 'reactstrap'
 import ProjectList from './ProjectList.js'
 import prism from '../images/prism.svg'
@@ -17,15 +16,16 @@ import ReactGA from 'react-ga'
 const Project = () => {
   ReactGA.pageview(window.location.pathname + window.location.search)
 
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const toggleDetails = (index) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
   return (
     <div>
       <div className='bg'>
-        <div
-          style={{
-            backgroundImage: `url(${prism})`,
-            objectFit: 'cover',
-          }}
-        >
+        <div style={{ backgroundImage: `url(${prism})`, objectFit: 'cover' }}>
           <Container>
             <Row>
               <Col>
@@ -35,98 +35,106 @@ const Project = () => {
           </Container>
         </div>
         <br />
-        <br />
-        <br />
-        <br />
         <Container>
           <Row>
-            {ProjectList.map((k, i) => {
-              return (
-                <Col xs={12} key={i} className='index'>
-                  <Container>
-                    <Row>
-                      <Col xs={12} className='ProjectCol'>
-                        <a href={k.projectLink} target='_blank'>
-                          <Card style={{ borderRadius: '25px' }}>
-                            <CardImg
-                              alt='Card image '
-                              src={k.image}
-                              width='100%'
-                              height='100%'
-                              style={{
-                                objectFit: 'cover',
-                                borderRadius: '20px',
-                              }}
-                            />
-                          </Card>
-                        </a>
-                      </Col>
+            {ProjectList.map((k, i) => (
+              <Col xs={12} key={i} className='mb-5'>
+                <Card className='footer-card'>
+                  <CardImg
+                    top
+                    width='100%'
+                    height='300px'
+                    src={k.image}
+                    alt={`${k.name} preview`}
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <CardBody className='bg3'>
+                    <h2 className='text-center mb-3 footer-text'>
+                      <strong>{k.name}</strong>
+                    </h2>
+                    <ul className='list-unstyled footer-text'>
+                      {k.stack && (
+                        <li>
+                          <strong className='footer-text'>Stack:</strong>{' '}
+                          <span className='footer-text'>{k.stack}</span>
+                        </li>
+                      )}
+                      {k.technologies && (
+                        <li>
+                          <strong className='footer-text'>Tech used:</strong>{' '}
+                          <span className='footer-text'>{k.technologies}</span>
+                        </li>
+                      )}
+                      {k.description && (
+                        <li>
+                          <strong className='footer-text'>Description:</strong>{' '}
+                          <span className='footer-text'>{k.description}</span>
+                        </li>
+                      )}
+                    </ul>
 
-                      <Col xs={12} className='ProjectCol'>
-                        <div className='text-center'>
-                          <br />
-                          <h2 className=''>
-                            <strong>{k.name ? k.name : ''}</strong>
-                          </h2>
-                          <ul className='text'>
-                            {k.stack ? <li>Stack: {k.stack}</li> : ''}
-                            {k.technologies ? (
-                              <li>Tech used: {k.technologies}</li>
-                            ) : (
-                              ''
-                            )}
-                            {k.description ? (
-                              <li>Project description: {k.description}</li>
-                            ) : (
-                              ''
-                            )}
-                            <br />
-                          </ul>
-                          <Container>
-                            <Row>
-                              <Col xs={6}>
-                                <Button
-                                  className=' text-white bgColor1 '
-                                  target='_blank'
-                                  href={k.githubLink}
-                                >
-                                  Link to github
-                                </Button>
-                              </Col>
-                              <Col xs={6}>
-                                {k.projectLink ? (
-                                  <Button
-                                    className='btn text-white bgColor1'
-                                    target='_blank'
-                                    href={k.projectLink}
-                                  >
-                                    Link to Project
-                                  </Button>
-                                ) : (
-                                  <Button
-                                    className='btn text-white bgColor1'
-                                    target='_blank'
-                                    href=''
-                                    disabled
-                                  >
-                                    Link to Project
-                                  </Button>
-                                )}
-                              </Col>
-                            </Row>
-                          </Container>
+                    <div className='text-center mt-4'>
+                      <Button
+                        className='footer-btn text-white me-3 bgColor'
+                        href={k.githubLink}
+                        target='_blank'
+                      >
+                        GitHub
+                      </Button>
+                      <Button
+                        className='footer-btn text-white me-3 bgColor'
+                        href={k.projectLink || '#'}
+                        target='_blank'
+                        disabled={!k.projectLink}
+                      >
+                        Live Project
+                      </Button>
+                      <Button
+                        color='secondary'
+                        onClick={() => toggleDetails(i)}
+                        className='bgColor'
+                      >
+                        {openIndex === i ? 'Hide Details' : 'More Details'}
+                      </Button>
+                    </div>
+
+                    <Collapse
+                      isOpen={openIndex === i}
+                      className='mt-4 footer-text'
+                    >
+                      {k.role && (
+                        <p className='footer-text'>
+                          <strong className='footer-text'>My Role:</strong>{' '}
+                          <span className='footer-text'>{k.role}</span>
+                        </p>
+                      )}
+                      {k.challenges && (
+                        <p className='footer-text'>
+                          <strong className='footer-text'>Challenges:</strong>{' '}
+                          <span className='footer-text'>{k.challenges}</span>
+                        </p>
+                      )}
+                      {k.impact && (
+                        <p className='footer-text'>
+                          <strong className='footer-text'>Impact:</strong>{' '}
+                          <span className='footer-text'>{k.impact}</span>
+                        </p>
+                      )}
+                      {k.architecture && (
+                        <div>
+                          <strong className='footer-text'>Architecture:</strong>
+                          <img
+                            src={k.architecture}
+                            alt='architecture'
+                            className='img-fluid rounded mt-2'
+                          />
                         </div>
-                      </Col>
-                    </Row>
-                  </Container>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </Col>
-              )
-            })}
+                      )}
+                    </Collapse>
+                  </CardBody>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </Container>
       </div>
