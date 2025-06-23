@@ -37,7 +37,7 @@ const ProjectList = [
       'Enabled scalable, decoupled ELT workflows with cost-efficient storage and high-performance Snowflake querying.',
     image: modernpipe,
     architecture: modernpipe,
-    githubLink: 'https://github.com/chaunceyplum/data-architecture',
+    githubLink: 'https://github.com/chaunceyplum/AIRFLOW',
     projectLink: '',
   },
   {
