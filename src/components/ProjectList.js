@@ -8,7 +8,7 @@ import modernpipe from '../images/Modern_Pipe.png'
 
 const ProjectList = [
   {
-    name: 'SNOW_RAG',
+    name: 'SNOW_RAG (Retrieval Augmented Generation)',
     stack: 'Next.js, FastAPI, Docker, MongoDB, LLaMA 3.2',
     technologies: 'Next.js, FastAPI, LangChain, Docker Compose, MongoDB',
     description:
@@ -41,14 +41,13 @@ const ProjectList = [
     projectLink: '',
   },
   {
-    name: 'Snowflake Scripts & dbt Processes',
+    name: 'Snowflake Scripts',
     stack: 'Snowflake, dbt',
     technologies: 'SQL, dbt, Snowflake Scripting',
     description:
       'A centralized folder containing modular SQL scripts and dbt models for transforming and orchestrating Snowflake data.',
     role: 'Created reusable SQL logic, implemented version-controlled models in dbt, and established a reliable transformation workflow.',
-    challenges:
-      'Managing model dependencies, implementing business logic cleanly, and maintaining up-to-date documentation.',
+    challenges: 'implementing business logic cleanly',
     impact:
       'Accelerated analytics delivery and ensured consistency across datasets by consolidating logic into one maintainable repo.',
     image: snowflake,
