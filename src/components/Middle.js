@@ -16,13 +16,13 @@ const Middle = () => {
         <About />
       </div>
 
+      <div id='Resume'>
+        <Resume />
+      </div>
+
       <div id='Project'>
         <Project />
       </div>
-
-      {/* <div id='Resume'>
-        <Resume />
-      </div> */}
 
       <div id='Contact'>
         <Contact />

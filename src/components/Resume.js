@@ -11,20 +11,18 @@ const Resume = () => {
           // className='titleBlock title textColor'
           style={{
             backgroundImage: `url(${cheese})`,
-            objectFit: 'cover',
+            objectFit: 'scaleDown',
             backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover', // Or 'contain' depending on your needs
           }}
         >
           <Container>
             <h3 className='titleBlock title textColor'>Resume</h3>
           </Container>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
+
         <Container>
-          <Row>
+          {/* <Row>
             <Col>
               <h2> Chauncey Plummer</h2>
               <br />
@@ -40,8 +38,8 @@ const Resume = () => {
               </p>
             </Col>
           </Row>
-          <br />
-          <Row>
+          <br /> */}
+          {/* <Row>
             <Col>
               <h3> Technical Skills</h3>
               <br />
@@ -56,12 +54,12 @@ const Resume = () => {
                 </ul>
               </Container>
             </Col>
-          </Row>
+          </Row> */}
           <br />
           <br />
           <Row>
             <Col>
-              <h3> Proffessional experience</h3>
+              <h3>Professional experience</h3>
               <br />
 
               <Container>
@@ -71,34 +69,41 @@ const Resume = () => {
                 </h6>
                 <ul>
                   <li>
-                    ~ Built API multiple endpoints via JSSP using JavaScript and
-                    JSAPI methods in Adobe Campaign Classic
+                    ~ Built production-grade real-time data pipelines on AWS to
+                    power low-latency connections between Customer Data
+                    Platforms and orchestration tools, ensuring reliable and
+                    scalable event delivery for personalization use cases.
                   </li>
                   <li>
-                    ~ Wrote SQL queries using JavaScript in Adobe Campaign
-                    Classic Supported marketers in HTML Email development.
+                    ~ Designed end-to-end data workflows leveraging AWS S3,
+                    Snowflake, and Adobe Experience Platform to automate the
+                    transformation of raw behavioral data into curated datasets
+                    for advanced segmentation and targeting.
                   </li>
                   <li>
-                    ~ Used tables and media queries to develop responsive Emails
-                    for all devices in Adobe Campaign Standard
+                    ~ Migrated complex marketing programs from Adobe Campaign to
+                    Adobe Journey Optimizer, using its event-driven architecture
+                    to enable real-time, personalized customer journeys at
+                    scale.
                   </li>
                   <li>
-                    ~ Broke down marketing emails into fragments so marketers
-                    could use adobe campaign standard drag-and-drop interface to
-                    build interactive HTML Emails without a developer present in
-                    Adobe Campaign Standard
+                    ~ Developed real-time marketing dashboards and internal
+                    applications, including a preference center and behavioral
+                    tracking systems, enabling teams to activate data insights
+                    and manage customer experiences dynamically.
                   </li>
                   <li>
-                    ~ Used Adobe I/O to access adobe campaign standard APIs to
-                    import and export table data to and from third parties
+                    ~ Led strategic martech initiatives such as an IP warming
+                    campaign with Zeta Marketing Platform (boosting email
+                    deliverability to 97%) and the API-driven migration of Adobe
+                    Target and Adobe Analytics configurations for a major
+                    telecom client.
                   </li>
                   <li>
-                    ~ Implemented a Full Stack custom instance monitoring
-                    dashboard, which allows end users to proactivly monitor
-                    their instance and get on top of issues before they occur.
-                    this dashboard also enables marketers to view deliverability
-                    and engagement metrics without having to acces the adobe
-                    campaign classic console
+                    ~ Contributed to solution design and adoption, working
+                    alongside marketers, engineers, and sales teams to present
+                    high-impact use cases and demos that bridge business needs
+                    with technical delivery.
                   </li>
                   <li>
                     ~ Provided documentation of design and development of
@@ -116,19 +121,20 @@ const Resume = () => {
               <br />
               <Container>
                 <ul>
-                  <li>TAP CXM</li>
+                  <li>Comcast Residential (multiple contracts)</li>
+                  <li>Comcast Business (multiple contracts)</li>
+                  <li>Salt River Projects</li>
                   <li>giff gaff</li>
                   <li>QIH Group</li>
                   <li>Target</li>
                   <li>Adobe</li>
                 </ul>
-                <p>...and many more</p>
               </Container>
             </Col>
           </Row>
           <br />
           <br />
-          <Row>
+          {/* <Row>
             <Col>
               <h3> Certificates</h3>
               <br />
@@ -143,14 +149,19 @@ const Resume = () => {
                     Nucamp Front End Web and Mobile Development Bootcamp
                     Certificate
                   </li>
-                  <li>Adobe Campaign Standard - Business Practitioner</li>
+                  <li>
+                    Earned multiple Adobe certifications, including Business
+                    Practitioner Expert (Adobe Campaign Classic, Adobe Campaign
+                    Standard) and Developer Expert (Adobe Journey Optimizer),
+                    demonstrating deep cross-platform expertise.
+                  </li>
                 </ul>
               </Container>
             </Col>
-          </Row>
+          </Row> */}
           <br />
           <br />
-          <Row>
+          {/* <Row>
             <Col>
               <h3> Education</h3>
               <br />
@@ -166,12 +177,7 @@ const Resume = () => {
                 </h6>
               </Container>
             </Col>
-          </Row>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          </Row> */}
         </Container>
       </div>
     </div>
