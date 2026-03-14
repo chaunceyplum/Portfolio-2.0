@@ -40,14 +40,16 @@ const Project = () => {
             {ProjectList.map((k, i) => (
               <Col xs={12} key={i} className='mb-5'>
                 <Card className='footer-card'>
-                  <CardImg
+                  {
+                    k.image ? <CardImg
                     top
                     width='100%'
                     height='300px'
                     src={k.image}
                     alt={`${k.name} preview`}
                     style={{ objectFit: 'cover' }}
-                  />
+                  /> : <></> 
+                  }
                   <CardBody className='bg3'>
                     <h2 className='text-center mb-3 footer-text'>
                       <strong>{k.name}</strong>

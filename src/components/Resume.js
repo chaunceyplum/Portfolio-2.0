@@ -8,12 +8,11 @@ const Resume = () => {
     <div>
       <div className='bg'>
         <div
-          // className='titleBlock title textColor'
           style={{
             backgroundImage: `url(${cheese})`,
             objectFit: 'scaleDown',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover', // Or 'contain' depending on your needs
+            backgroundSize: 'cover',
           }}
         >
           <Container>
@@ -22,109 +21,125 @@ const Resume = () => {
         </div>
 
         <Container>
-          {/* <Row>
-            <Col>
-              <h2> Chauncey Plummer</h2>
-              <br />
-              <br />
-              <p>
-                An enthusiastic Full Stack Web Developer with experience in
-                engineering scalable web applications. Proficient in a variety
-                of programming languages and web technologies, including HTML,
-                CSS, JavaScript, Python, Node.js, React, and MongoDB.
-                Demonstrated ability to manage complex projects from concept to
-                deployment, with a focus on delivering high-quality,
-                user-friendly solutions.
-              </p>
-            </Col>
-          </Row>
-          <br /> */}
-          {/* <Row>
-            <Col>
-              <h3> Technical Skills</h3>
-              <br />
-
-              <Container>
-                <ul>
-                  <li>Programming languages: HTML, CSS, JavaScript, Python</li>
-                  <li>Web frameworks: Node.js, React, Express.js</li>
-                  <li>Database technologies: MySQL, MongoDB</li>
-                  <li>Version control: Git</li>
-                  <li>Other tools: Jira, Slack and Teams</li>
-                </ul>
-              </Container>
-            </Col>
-          </Row> */}
           <br />
           <br />
           <Row>
             <Col>
-              <h3>Professional experience</h3>
               <br />
 
               <Container>
-                <h6>
-                  <strong>TAP CXM</strong> ~ <i>Technical Consultant</i> ~ (Feb
-                  2022 - Present)
-                </h6>
+                <h3>
+                  <strong>TAP CXM</strong> ~{' '}
+                  <i>Senior Solutions Consultant</i>
+                  ~ (Feb 2022 - Present)
+                </h3>
+                <br /><br />
                 <ul>
                   <li>
-                    ~ Built production-grade real-time data pipelines on AWS to
-                    power low-latency connections between Customer Data
-                    Platforms and orchestration tools, ensuring reliable and
-                    scalable event delivery for personalization use cases.
-                  </li>
+                    Tagging Product Owner on enterprise Adobe Analytics and Web SDK
+                    implementations — covering implementation standards, governance
+                    frameworks, and QA across large-scale digital properties.
+                  </li><br />
+
                   <li>
-                    ~ Designed end-to-end data workflows leveraging AWS S3,
-                    Snowflake, and Adobe Experience Platform to automate the
-                    transformation of raw behavioral data into curated datasets
-                    for advanced segmentation and targeting.
-                  </li>
+                    Led architecture discussions for enterprise Adobe Experience
+                    Platform implementations, advising on identity strategy,
+                    real-time segmentation, data collection standards, and
+                    downstream activation patterns.
+                  </li><br />
+
                   <li>
-                    ~ Migrated complex marketing programs from Adobe Campaign to
-                    Adobe Journey Optimizer, using its event-driven architecture
-                    to enable real-time, personalized customer journeys at
-                    scale.
-                  </li>
+                    Worked on real-time personalization pipelines using AEP Edge,
+                    Web SDK (Alloy), and CMS platforms — handling edge audience
+                    resolution and on-site content variation without server-side
+                    session dependencies.
+                  </li><br />
+
                   <li>
-                    ~ Developed real-time marketing dashboards and internal
-                    applications, including a preference center and behavioral
-                    tracking systems, enabling teams to activate data insights
-                    and manage customer experiences dynamically.
-                  </li>
+                    Designed integration patterns between CMS platforms,
+                    personalization engines, and customer data platforms to enable
+                    real-time audience-driven experiences across web properties.
+                  </li><br />
+
                   <li>
-                    ~ Led strategic martech initiatives such as an IP warming
-                    campaign with Zeta Marketing Platform (boosting email
-                    deliverability to 97%) and the API-driven migration of Adobe
-                    Target and Adobe Analytics configurations for a major
-                    telecom client.
-                  </li>
+                    Conducted full Adobe Launch property audits, producing structured
+                    findings and observability frameworks spanning GTM, Launch,
+                    AEP/CJA, and cloud data platforms across multi-team environments.
+                  </li><br />
+
                   <li>
-                    ~ Contributed to solution design and adoption, working
-                    alongside marketers, engineers, and sales teams to present
-                    high-impact use cases and demos that bridge business needs
-                    with technical delivery.
-                  </li>
+                    Worked across XDM schema design, identity graph configuration,
+                    and edge segmentation for large-scale AEP implementations —
+                    including diagnosing authentication state issues, audience
+                    discrepancies, and profile-level data collection gaps.
+                  </li><br />
+
                   <li>
-                    ~ Provided documentation of design and development of
-                    Projects
+                    Defined governance frameworks for enterprise data collection
+                    strategies including data layer standards, schema design,
+                    naming conventions, and QA processes across large digital
+                    ecosystems.
+                  </li><br />
+
+                  <li>
+                    Contributed to consent management architectures mapping CMP
+                    vendor consent objects to AEP's consentStrings schema for
+                    GDPR-compliant deployments.
+                  </li><br />
+
+                  <li>
+                    Troubleshot Adobe Target delivery issues across a range of
+                    implementations — including cross-property configuration bleed,
+                    flickerless activity failures, and offer rendering conflicts
+                    introduced by Web SDK migration.
+                  </li><br />
+
+                  <li>
+                    Diagnosed complex production issues across Adobe Analytics,
+                    Target, and AEP implementations by analyzing Web SDK payloads,
+                    network traffic, identity resolution behavior, and edge
+                    decisioning responses.
+                  </li><br />
+
+                  <li>
+                    Supported large-scale migrations of Adobe Analytics and Adobe
+                    Target implementations across organizations, including
+                    API-driven object migration, configuration validation, and
+                    cross-property dependency analysis.
+                  </li><br />
+
+                  <li>
+                    Involved in email channel work including IP warming,
+                    deliverability optimization, and the migration of batch
+                    campaigns into API-triggered, event-driven journeys in Adobe
+                    Journey Optimizer.
+                  </li><br />
+
+                  <li>
+                    Acted as the technical liaison between marketing stakeholders,
+                    platform architects, and engineering teams to translate
+                    business requirements into scalable technical solutions.
                   </li>
                 </ul>
               </Container>
             </Col>
           </Row>
+
           <br />
           <br />
+
           <Row>
             <Col>
-              <h3> Companies I've collabed with</h3>
+              <h3>Enterprise Clients</h3>
               <br />
               <Container>
                 <ul>
-                  <li>Comcast Residential (multiple contracts)</li>
                   <li>Comcast Business (multiple contracts)</li>
-                  <li>Salt River Projects</li>
-                  <li>giff gaff</li>
+                  <li>Comcast Residential (multiple contracts)</li>
+                  <li>Sky Europe (Sky GB / Sky IE)</li>
+                  <li>NBCUniversal</li>
+                  <li>Salt River Project</li>
+                  <li>giffgaff</li>
                   <li>QIH Group</li>
                   <li>Target</li>
                   <li>Adobe</li>
@@ -132,52 +147,45 @@ const Resume = () => {
               </Container>
             </Col>
           </Row>
-          <br />
-          <br />
-          {/* <Row>
-            <Col>
-              <h3> Certificates</h3>
-              <br />
 
+          <br />
+          <br />
+
+          <Row>
+            <Col>
+              <h3>Certifications</h3>
+              <br />
               <Container>
                 <ul>
                   <li>
-                    Nucamp Full Stack Web and Mobile Development Bootcamp
-                    Certificate
+                    Adobe Certified Expert — Adobe Campaign Classic Business
+                    Practitioner
                   </li>
                   <li>
-                    Nucamp Front End Web and Mobile Development Bootcamp
-                    Certificate
+                    Adobe Certified Expert — Adobe Campaign Standard Business
+                    Practitioner
                   </li>
                   <li>
-                    Earned multiple Adobe certifications, including Business
-                    Practitioner Expert (Adobe Campaign Classic, Adobe Campaign
-                    Standard) and Developer Expert (Adobe Journey Optimizer),
-                    demonstrating deep cross-platform expertise.
+                    Adobe Certified Expert — Adobe Journey Optimizer Developer
                   </li>
+                  {/* <li>
+                    Adobe Analytics Architect Master (AD0-E207) — In Progress
+                  </li>
+                  <li>
+                    Adobe Customer Journey Analytics Developer Expert (AD0-E604) —
+                    In Progress
+                  </li> */}
                 </ul>
               </Container>
             </Col>
-          </Row> */}
-          <br />
-          <br />
-          {/* <Row>
-            <Col>
-              <h3> Education</h3>
-              <br />
+          </Row>
 
-              <Container>
-                <h6>
-                  <strong>Laguardia Community College</strong> ~{' '}
-                  <i>
-                    Associates degree in Applied Scienece (Network
-                    Administration)
-                  </i>{' '}
-                  ~ (Sep 2016 - Jan 2019)
-                </h6>
-              </Container>
-            </Col>
-          </Row> */}
+          <br />
+          <br />
+
+          <Row>
+          </Row>
+
         </Container>
       </div>
     </div>

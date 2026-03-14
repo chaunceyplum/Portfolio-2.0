@@ -29,8 +29,7 @@ const Home = () => {
                       </strong>
                     </h3>
                     <p className='title2'>
-                      Im an enthusiastic Full Stack Web Developer with
-                      experience in engineering scalable web applications.
+                      I'm a Senior Solutions Consultant specializing in enterprise martech architecture — designing data collection strategies, identity frameworks, and personalization systems for some of the largest brands in media, telecom, and utilities.
                     </p>
                     {/* </span> */}
                     <br />

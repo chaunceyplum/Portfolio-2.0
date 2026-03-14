@@ -45,7 +45,7 @@ const Footer = () => {
                   </Form> */}
 
                   <p className='text-center' target='blank'>
-                    ©2025
+                    ©2026 Chauncey Plummer.<br/> All rights reserved.
                   </p>
                 </Col>
                 <Col xs={2} />
