@@ -29,7 +29,7 @@ const Home = () => {
                       </strong>
                     </h3>
                     <p className='title2'>
-                      I'm a Senior Solutions Consultant specializing in enterprise martech architecture — designing data collection strategies, identity frameworks, and personalization systems for some of the largest brands in media, telecom, and utilities.
+                      I'm a martech architect and AI engineer — I design data architectures, identity frameworks, and personalization systems for some of the largest brands in media, telecom, and utilities, and build the agentic AI tooling and infrastructure that automates that work end-to-end.
                     </p>
                     {/* </span> */}
                     <br />

@@ -29,8 +29,8 @@ const About = () => {
           <Row>
             {/* <h2> Chauncey Plummer</h2> */}
             <p>
-              I'm a Senior Solutions Consultant at TAP, a martech consultancy
-              where I lead technical strategy across enterprise Adobe
+              I'm a martech architect at TAP, a martech consultancy, where I
+              lead technical strategy across enterprise Adobe
               implementations. My work sits at the intersection of data
               architecture, digital analytics, and real-time personalization —
               translating complex business requirements into precise, scalable
@@ -47,11 +47,26 @@ const About = () => {
               and implementation QA for clients at the scale of Comcast
               Business, NBCU, and Sky Europe. I've led full Launch property
               audits, EDDL migrations, and cross-platform observability
-              frameworks spanning GTM, AEP, CJA, and BigQuery. I hold
-              certifications in Adobe Campaign and Adobe Journey Optimizer.
+              frameworks spanning GTM, AEP, CJA, and BigQuery. I hold Adobe
+              Certified Expert credentials across Campaign, Journey Optimizer,
+              Customer Journey Analytics, and Experience Platform.
             </p>
             <p>
               My background also spans the broader martech stack beyond analytics and data collection. I've worked across email platform migrations end-to-end, from data ingestion and audience transport through to template implementation across multiple ESPs. On the campaign side, I've implemented real-time messaging in Adobe Campaign and Adobe Journey Optimizer, and have worked on converting batch programs into API-triggered, event-driven journeys. I've built internal tooling including marketing dashboards for non-technical stakeholders and preference management applications, and have used CDPs to build and activate audiences across channels. I also put together data pipeline demos visualizing the full activation path — from data warehouse and lake through to CDP and ESP — to help stakeholders understand how customer data moves and gets used.
+            </p>
+            <p>
+              Outside of client delivery, I design and build agentic AI
+              systems — including a production Model Context Protocol (MCP)
+              server exposing 139 tools across Adobe Experience Platform, AWS,
+              Databricks, and Snowflake, backed by a semantic knowledge base,
+              and the Next.js agent harness that drives it. That system takes
+              a natural-language request and autonomously executes a
+              multi-phase martech build — from XDM schema design through
+              audience activation — the same work I otherwise scope and
+              deliver by hand for clients. It's given me a working handle on
+              agentic orchestration, tool-use design, and multi-provider LLM
+              routing, not just as concepts but as production systems I've
+              shipped and demoed.
             </p>
           </Row>
         </Container>
@@ -93,13 +108,25 @@ const About = () => {
                   <li>Express.js</li>
                   <li>MongoDB</li>
                   <li>FastAPI</li>
-          
+
                   <li>Flask</li>
                   <li>Postgres</li>
                   <li>SQL</li>
                   <li>Next.js</li>
-                  <li>Retrival Augmented Generation</li>
-                  <li>Agentic AI</li>
+                </ul>
+              </div>
+              <br />
+            </Col>
+            <Col className="text-center" xs={12} md={6}>
+              <div>
+                <h3 className="bgColor1">AI & Agentic Engineering</h3>
+                <ul>
+                  <li>Retrieval-Augmented Generation (RAG)</li>
+                  <li>Agentic AI / LLM Tool-Use Orchestration</li>
+                  <li>Model Context Protocol (MCP)</li>
+                  <li>Multi-Agent Orchestration</li>
+                  <li>AWS Lambda Agent Infrastructure</li>
+                  <li>Multi-Provider LLM Routing (Anthropic, Bedrock, OpenAI)</li>
                 </ul>
               </div>
               <br />
