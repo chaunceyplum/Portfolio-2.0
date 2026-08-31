@@ -30,7 +30,7 @@ const Resume = () => {
               <Container>
                 <h3>
                   <strong>TAP CXM</strong> ~{' '}
-                  <i>Senior Solutions Consultant</i>
+                  <i>Martech Architect (Senior Solutions Consultant)</i>
                   ~ (Feb 2022 - Present)
                 </h3>
                 <br /><br />
@@ -49,10 +49,10 @@ const Resume = () => {
                   </li><br />
 
                   <li>
-                    Worked on real-time personalization pipelines using AEP Edge,
-                    Web SDK (Alloy), and CMS platforms — handling edge audience
-                    resolution and on-site content variation without server-side
-                    session dependencies.
+                    Architected real-time personalization pipelines using AEP
+                    Edge, Web SDK (Alloy), and CMS platforms — handling edge
+                    audience resolution and on-site content variation without
+                    server-side session dependencies.
                   </li><br />
 
                   <li>
@@ -82,7 +82,7 @@ const Resume = () => {
                   </li><br />
 
                   <li>
-                    Contributed to consent management architectures mapping CMP
+                    Designed consent management architectures mapping CMP
                     vendor consent objects to AEP's consentStrings schema for
                     GDPR-compliant deployments.
                   </li><br />
@@ -109,10 +109,10 @@ const Resume = () => {
                   </li><br />
 
                   <li>
-                    Involved in email channel work including IP warming,
-                    deliverability optimization, and the migration of batch
-                    campaigns into API-triggered, event-driven journeys in Adobe
-                    Journey Optimizer.
+                    Led email channel work including IP warming,
+                    deliverability optimization, and migrating batch
+                    campaigns into API-triggered, event-driven journeys in
+                    Adobe Journey Optimizer.
                   </li><br />
 
                   <li>
@@ -168,12 +168,16 @@ const Resume = () => {
                   <li>
                     Adobe Certified Expert — Adobe Journey Optimizer Developer
                   </li>
-                  {/* <li>
-                    Adobe Analytics Architect Master (AD0-E207) — In Progress
+                  <li>
+                    Adobe Certified Expert — Adobe Customer Journey Analytics
+                    Developer Expert
                   </li>
                   <li>
-                    Adobe Customer Journey Analytics Developer Expert (AD0-E604) —
-                    In Progress
+                    Adobe Certified Expert — Adobe Experience Platform Business
+                    Practitioner
+                  </li>
+                  {/* <li>
+                    Adobe Analytics Architect Master (AD0-E207) — In Progress
                   </li> */}
                 </ul>
               </Container>
