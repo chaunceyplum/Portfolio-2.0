@@ -6,32 +6,32 @@ import modernpipe from '../images/Modern_Pipe.png'
 
 const ProjectList = [
   {
-    name: 'AEC_MCP — Adobe Experience Cloud Multi-Agent MCP Server',
+    name: 'AEC_MCP: Adobe Experience Cloud MCP Server',
     stack: 'AWS Lambda (Python 3.12, arm64), API Gateway, RDS PostgreSQL + pgvector, Voyage AI',
     technologies: 'Model Context Protocol (MCP), AWS SAM, boto3, Adobe IMS OAuth2, Databricks REST API, Snowflake Connector',
     description:
-      'A production MCP server deployed on AWS Lambda exposing 139 tools across three specialized agents — Adobe Experience Cloud, AWS, and Data Engineering — to any MCP-compatible client. A semantic knowledge base built on pgvector and Voyage AI embeddings lets the agents retrieve relevant documentation and internal patterns before acting, and a 9-phase orchestrator can drive an entire martech build end-to-end from a single natural-language request: website instrumentation, AEP schemas and datasets, RT-CDP audiences, CJA analytics, and AJO journey activation.',
-    role: 'Designed and built the full server — the JSON-RPC protocol handler, all three agent tool registries, the pgvector ingestion/retrieval pipeline, credential isolation via AWS SSM, and the 9-phase build orchestrator.',
+      'An MCP server running on AWS Lambda that gives any MCP client access to 139 tools, split across three agents: Adobe Experience Cloud, AWS, and Data Engineering. Before the agents do anything, they pull relevant docs and internal patterns from a knowledge base I built on pgvector and Voyage AI embeddings. There\'s also a 9 phase orchestrator that can take one plain English request and run a whole martech build: site instrumentation, AEP schemas and datasets, RT CDP audiences, CJA analytics, and AJO journeys.',
+    role: 'I built the whole thing. That includes the JSON RPC handler, the tool registries for all three agents, the pgvector ingestion and retrieval pipeline, credential isolation through AWS SSM, and the build orchestrator.',
     challenges:
-      'Running a stateful, multi-step orchestration process on a stateless Lambda architecture; reconciling inconsistent API conventions across Adobe Reactor, Flow Service, Databricks, and Snowflake behind one uniform tool interface; keeping tool schemas compatible with MCP clients that only support string-typed parameters.',
+      'The hardest part was running a long, multi step process on Lambda, which doesn\'t hold state between calls. On top of that, Adobe Reactor, Flow Service, Databricks, and Snowflake all have their own API quirks, and I had to wrap them in one consistent tool interface. Some MCP clients only accept string parameters, so the tool schemas had to work around that too.',
     impact:
-      'Gives any MCP-compatible AI client live, authenticated, agentic access to an entire Adobe Experience Cloud + AWS + data warehouse stack — turning multi-day manual configuration work (schemas, segments, dataflows, Launch rules) into tool calls an LLM can execute directly.',
+      'An AI client can now work directly against a live Adobe Experience Cloud, AWS, and data warehouse stack. Setup work that usually takes days (schemas, segments, dataflows, Launch rules) becomes a handful of tool calls.',
     image: '',
     architecture: '',
     githubLink: '',
     projectLink: '',
   },
   {
-    name: 'NEXT_HARNESS — Agentic Web Harness for AEC_MCP',
+    name: 'NEXT_HARNESS: Agent Web App for AEC_MCP',
     stack: 'Next.js, TypeScript, Anthropic / Bedrock / OpenAI APIs',
-    technologies: 'Next.js App Router, MCP client, LLM tool-use orchestration, multi-provider model routing',
+    technologies: 'Next.js App Router, MCP client, LLM tool use orchestration, model routing across providers',
     description:
-      'A Next.js front end that turns natural-language requests into live agent runs against the AEC_MCP server. Rather than a fixed pipeline, a dynamic agent loop semantically shortlists the handful of MCP tools relevant to the request out of the full tool surface, then lets the model call them iteratively until the task completes, with the full tool-call trace rendered live in the UI.',
-    role: 'Built the MCP client bridge, the tool-retrieval layer that narrows the full tool surface down to a relevant shortlist per request, the multi-provider model router (swappable per request across Anthropic, Bedrock, and OpenAI), and the execution tracing UI.',
+      'A Next.js app where you type what you want and it kicks off a live agent run against the AEC_MCP server. There\'s no fixed pipeline. For each request it picks out the few tools that actually matter from the full set, then lets the model keep calling them until the job is done. Every tool call shows up in the UI as it happens.',
+    role: 'I built the MCP client bridge, the tool retrieval layer that narrows things down to a short list per request, a model router that lets you switch between Anthropic, Bedrock, and OpenAI on any request, and the tracing UI.',
     challenges:
-      'Keeping an LLM tool-use loop reliable and bounded against a large tool surface without blowing context or looping indefinitely; gating the full 9-phase autonomous build behind an explicit opt-in since it has real side effects across GitHub, Netlify, Adobe, and AWS.',
+      'Keeping the agent loop reliable with that many tools available, without running out of context or getting stuck in a loop. I also put the full autonomous build behind an explicit opt in, since it makes real changes in GitHub, Netlify, Adobe, and AWS.',
     impact:
-      'Turns a martech build that would take a team days of manual configuration into a single natural-language request, with a live trace of exactly which tools the agent called and why.',
+      'A martech build that would normally take a team several days of manual setup can start from one request, and you can see exactly which tools the agent used and why.',
     image: '',
     architecture: '',
     githubLink: 'https://github.com/chaunceyplum/NEXT_HARNESS',
@@ -42,12 +42,12 @@ const ProjectList = [
     stack: 'Next.js, FastAPI, Docker, MongoDB, LLaMA 3.2',
     technologies: 'Next.js, FastAPI, LangChain, Docker Compose, MongoDB',
     description:
-      'A full-stack RAG app that scrapes, embeds, and semantically retrieves Snowflake documentation using a local LLM.',
-    role: 'Built modular FastAPI services for ingestion and querying, and designed a responsive frontend for interactive querying.',
+      'A full stack RAG app that scrapes the Snowflake docs, embeds them, and lets you search them in plain English using a local LLM.',
+    role: 'I built separate FastAPI services for ingestion and querying, plus a responsive frontend for asking questions.',
     challenges:
-      'Handled token limits, long document chunking, and ensured responsive UI while managing large query payloads.',
+      'Working within token limits, chunking really long docs, and keeping the UI snappy while handling large query payloads.',
     impact:
-      'Enabled developers to intuitively search over 6000+ Snowflake docs without needing third-party APIs.',
+      'Developers can search more than 6,000 Snowflake docs in a natural way without paying for a third party API.',
     image: snowrag,
     architecture: snowdiagram,
     githubLink: 'https://github.com/chaunceyplum/AI/tree/main/SNOW_RAG',
@@ -58,28 +58,28 @@ const ProjectList = [
     stack: 'AEP, Web SDK (Alloy), Next.js, AWS Lambda, PostgreSQL',
     technologies: 'Adobe Experience Platform, Alloy, Next.js, AWS Lambda, PostgreSQL',
     description:
-      'A two-path personalization system combining a nightly audience sync and a runtime edge resolution layer. Audience definitions are pulled from AEP into a relational store via API; at runtime, Web SDK fires a send event, Edge returns segment membership, and a lightweight API route drives CMS personalization decisions.',
-    role: 'Designed the overall architecture, built the Lambda sync process, and defined the edge resolution pattern for the runtime path.',
+      'A personalization setup with two paths. Every night, audience definitions get pulled from AEP into a Postgres database through the API. At runtime, Web SDK sends an event, Edge comes back with the visitor\'s segments, and a small API route tells the CMS what content to show.',
+    role: 'I designed the overall architecture, built the Lambda sync job, and defined how the runtime edge lookup works.',
     challenges:
-      'Coordinating two independent data flows — batch sync and real-time edge — while keeping CMS personalization decisions free of server-side session dependencies.',
+      'Keeping the nightly batch sync and the live edge flow in step with each other, while making sure the CMS never had to rely on a server side session.',
     impact:
-      'Enabled on-site content personalization driven by AEP audience membership without full-page redirects or session coupling.',
+      'The site can personalize content based on AEP audiences with no full page redirects and no session coupling.',
     image: '',
     architecture: '',
     githubLink: '',
     projectLink: '',
   },
   {
-    name: 'Martech Tagging Audit & Data Layer Migration',
+    name: 'Martech Tagging Audit and Data Layer Migration',
     stack: 'Adobe Launch, GTM, AEP, CJA, BigQuery/GCP',
     technologies: 'Adobe Launch, Google Tag Manager, Adobe Experience Platform, Customer Journey Analytics, BigQuery',
     description:
-      'Full audit of an enterprise Adobe Launch property, producing a structured findings report and an observability framework covering the full event pipeline. Included architectural planning for a data layer migration spanning GTM, Launch, AEP/CJA, and a cloud data warehouse across multiple team ownership boundaries.',
-    role: 'Led the audit, authored the findings report, and developed the observability framework and migration architecture.',
+      'A full audit of an enterprise Adobe Launch property. I delivered a findings report and a monitoring framework covering the whole event pipeline, then planned out a data layer migration that touched GTM, Launch, AEP and CJA, and a cloud data warehouse, with several different teams owning different pieces.',
+    role: 'I led the audit, wrote the findings report, and put together the monitoring framework and migration plan.',
     challenges:
-      'Mapping event pipeline ownership across teams with different tooling and release cadences, and designing a migration path that could be adopted incrementally.',
+      'Figuring out who owned what when every team had its own tools and release schedule, and planning a migration they could roll out in stages.',
     impact:
-      'Gave the client a clear picture of implementation health and a structured roadmap for data layer modernization.',
+      'The client finally had a clear view of how healthy their implementation was and a realistic roadmap for modernizing their data layer.',
     image: '',
     architecture: '',
     githubLink: '',
@@ -90,46 +90,46 @@ const ProjectList = [
     stack: 'AEP, Web SDK, OneTrust, XDM',
     technologies: 'Adobe Experience Platform, Alloy, OneTrust, XDM Schema',
     description:
-      'Consent architecture mapping a custom CMP vendor consent object to AEP\'s consentStrings schema. Work included resolving the event-level vs. profile-level capture model and ensuring the implementation met GDPR requirements for a European deployment.',
-    role: 'Designed the consent mapping approach, defined the XDM target schema, and resolved the architectural question around capture level.',
+      'Consent setup that maps a custom CMP vendor\'s consent object to AEP\'s consentStrings schema. A big part of the work was deciding whether to capture consent at the event level or the profile level, and making sure it all held up under GDPR for a European rollout.',
+    role: 'I designed the consent mapping, defined the target XDM schema, and made the call on where consent should be captured.',
     challenges:
-      'Reconciling a non-standard vendor consent structure with AEP\'s expected schema while making a defensible call on event-level vs. profile-level capture.',
+      'The vendor\'s consent structure didn\'t look anything like what AEP expects, and the event vs. profile decision had to be one we could defend.',
     impact:
-      'Delivered a GDPR-compliant consent implementation that integrated cleanly with the existing Web SDK event flow.',
+      'Delivered a GDPR compliant consent setup that plugged right into the existing Web SDK event flow.',
     image: '',
     architecture: '',
     githubLink: '',
     projectLink: '',
   },
   {
-    name: 'Cross-Property Target Delivery Failure (FDE Case Study)',
+    name: 'Adobe Target Failures Across Properties (Case Study)',
     stack: 'Adobe Target, Web SDK (Alloy), Adobe Launch',
     technologies: 'Adobe Target, Experience Platform Web SDK, Adobe Launch (Reactor)',
     description:
-      'A multi-property Adobe Target implementation had activities intermittently failing to render — flickerless delivery breaking, offers not resolving, and behavior that varied by property despite ostensibly shared configuration.',
+      'A client running Adobe Target across several properties had activities randomly failing to render. Flicker handling was breaking, offers weren\'t resolving, and each property behaved differently even though they were supposed to share the same config.',
     role:
-      'Owned the diagnosis solo, working directly in a live production environment with active campaigns running, mid-way through an in-flight Web SDK migration — a rollback wasn\'t an acceptable option.',
+      'I handled the diagnosis on my own, in production, with live campaigns running and a Web SDK migration already halfway done. Rolling back wasn\'t an option.',
     challenges:
-      'Traced the failures to configuration bleed between properties: activities on migrated properties were picking up stale or cross-property Target configuration. Diagnosis required correlating Web SDK network payloads, Target response codes, and Launch rule/library state across properties sitting at different migration stages.',
+      'The root cause was config leaking between properties. Activities on the migrated properties were picking up old settings or settings from other properties. Finding it meant lining up Web SDK network payloads, Target response codes, and Launch rule and library state across properties that were all at different points in the migration.',
     impact:
-      'Isolated the bleed to a specific configuration inheritance pattern introduced mid-migration, corrected it, and restored reliable flickerless delivery without rolling back the Web SDK migration already in progress.',
+      'I tracked the leak down to a specific config inheritance pattern that came in during the migration, fixed it, and got Target delivering reliably again without touching the rollout that was already in progress.',
     image: '',
     architecture: '',
     githubLink: '',
     projectLink: '',
   },
   {
-    name: 'Web SDK Migration: Identity & Audience Discrepancy (FDE Case Study)',
+    name: 'Web SDK Migration: Identity and Audience Mismatch (Case Study)',
     stack: 'AEP, Web SDK (Alloy), Identity Graph, XDM',
-    technologies: 'Adobe Experience Platform, Experience Platform Web SDK, Identity Service, Real-Time CDP',
+    technologies: 'Adobe Experience Platform, Experience Platform Web SDK, Identity Service, Real Time CDP',
     description:
-      'Following a Web SDK migration on a large-scale AEP implementation, downstream teams reported audience membership and profile counts that no longer matched pre-migration baselines.',
+      'After a Web SDK migration on a large AEP implementation, other teams started noticing that audience sizes and profile counts didn\'t match what they saw before the migration.',
     role:
-      'Led the diagnostic effort with no single log source covering the full path from browser event to segment membership, and the client\'s next activation cycle already scheduled.',
+      'I led the investigation. There was no single log that covered the path from a browser event to segment membership, and the client\'s next activation was already on the calendar.',
     challenges:
-      'Traced individual identities end-to-end through Web SDK payloads, edge decisioning responses, and profile data to isolate whether the gap originated in identity graph configuration, capture-level differences introduced by the migration, or edge segmentation logic.',
+      'I followed individual identities through Web SDK payloads, edge responses, and profile data to figure out whether the gap was coming from the identity graph setup, a change in how data was being captured after the migration, or the edge segmentation logic.',
     impact:
-      'Traced the discrepancy to a profile-level data collection gap specific to the migrated implementation, corrected the capture configuration, and brought audience counts back in line with expected volume before the next activation cycle.',
+      'The gap turned out to be missing profile level data on the migrated implementation. I fixed the capture config and audience counts were back where they should be before the next activation went out.',
     image: '',
     architecture: '',
     githubLink: '',
@@ -140,11 +140,11 @@ const ProjectList = [
     stack: 'Snowflake, dbt',
     technologies: 'SQL, dbt, Snowflake Scripting',
     description:
-      'A centralized folder containing modular SQL scripts and dbt models for transforming and orchestrating Snowflake data.',
-    role: 'Created reusable SQL logic, implemented version-controlled models in dbt, and established a reliable transformation workflow.',
-    challenges: 'implementing business logic cleanly',
+      'One repo holding reusable SQL scripts and dbt models for transforming and orchestrating data in Snowflake.',
+    role: 'I wrote the reusable SQL, set up the dbt models under version control, and built a transformation workflow the team could count on.',
+    challenges: 'Keeping the business logic clean and easy to follow.',
     impact:
-      'Accelerated analytics delivery and ensured consistency across datasets by consolidating logic into one maintainable repo.',
+      'Analytics got delivered faster and the numbers stayed consistent across datasets since all the logic lives in one place.',
     image: snowflake,
     architecture: '',
     githubLink: 'https://github.com/chaunceyplum/DBT',
@@ -155,12 +155,12 @@ const ProjectList = [
     stack: 'PostgreSQL, AWS, Apache Iceberg, Snowflake, Airflow',
     technologies: 'RDS, Apache Airflow, S3, Apache Iceberg, Snowflake, Python, SQL',
     description:
-      'End-to-end enterprise data pipeline that ingests transactional data from RDS into Iceberg tables on S3, then builds Snowflake analytical models.',
-    role: 'Engineered Airflow DAGs to orchestrate ingestion, built Iceberg tables from raw PostgreSQL data, and modeled analytics in Snowflake.',
+      'A data pipeline that moves transactional data from RDS into Iceberg tables on S3, then builds analytics models on top of it in Snowflake.',
+    role: 'I wrote the Airflow DAGs for ingestion, built the Iceberg tables from the raw Postgres data, and modeled the analytics layer in Snowflake.',
     challenges:
-      'Coordinating batch dataflow across multiple systems while maintaining schema evolution and data consistency.',
+      'Coordinating batch jobs across several systems while handling schema changes and keeping the data consistent.',
     impact:
-      'Enabled scalable, decoupled ELT workflows with cost-efficient storage and high-performance Snowflake querying.',
+      'A scalable ELT setup with cheap storage and fast queries in Snowflake, where each piece can change without breaking the others.',
     image: modernpipe,
     architecture: modernpipe,
     githubLink: 'https://github.com/chaunceyplum/AIRFLOW',
@@ -171,12 +171,12 @@ const ProjectList = [
     stack: 'MERN',
     technologies: 'MongoDB, Express, React, Node.js, Redux Toolkit, Bootstrap',
     description:
-      'A real-time gaming lobby discovery web app with REST API backend, region/game filtering, and user authentication.',
-    role: 'Built both frontend and backend; implemented lobby lifecycle logic, user authentication, and responsive UI.',
+      'A web app for finding online gaming lobbies in real time, with a REST API, filters by region and game, and user accounts.',
+    role: 'I built the frontend and backend, including the lobby lifecycle logic, authentication, and a responsive UI.',
     challenges:
-      'Managing time-based lobby expiration, synchronizing auth state, and ensuring mobile-first responsiveness.',
+      'Expiring lobbies on a timer, keeping auth state in sync, and making it work well on mobile first.',
     impact:
-      'Provided a user-friendly way for gamers to find online lobbies without Discord or forums.',
+      'Gamers get an easy way to find people to play with without digging through Discord servers or forums.',
     image: lobby,
     architecture: '',
     githubLink: 'https://github.com/chaunceyplum/Lobby',
