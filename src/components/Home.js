@@ -29,7 +29,7 @@ const Home = () => {
                       </strong>
                     </h3>
                     <p className='title2'>
-                      I'm a martech architect and AI engineer — I design data architectures, identity frameworks, and personalization systems for some of the largest brands in media, telecom, and utilities, and build the agentic AI tooling and infrastructure that automates that work end-to-end.
+                      I'm a martech architect and AI engineer based in New York. I design the data, identity, and personalization setups behind some of the biggest brands in media, telecom, and utilities. On the side, I build AI agents that can do a lot of that work on their own.
                     </p>
                     {/* </span> */}
                     <br />

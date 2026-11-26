@@ -31,94 +31,90 @@ const Resume = () => {
                 <h3>
                   <strong>TAP CXM</strong> ~{' '}
                   <i>Martech Architect (Senior Solutions Consultant)</i>
-                  ~ (Feb 2022 - Present)
+                  ~ (Feb 2022 to Present)
                 </h3>
                 <br /><br />
                 <ul>
                   <li>
-                    Tagging Product Owner on enterprise Adobe Analytics and Web SDK
-                    implementations — covering implementation standards, governance
-                    frameworks, and QA across large-scale digital properties.
+                    Tagging Product Owner on enterprise Adobe Analytics and Web
+                    SDK implementations. I set the implementation standards,
+                    governance, and QA process across large digital properties.
                   </li><br />
 
                   <li>
-                    Led architecture discussions for enterprise Adobe Experience
-                    Platform implementations, advising on identity strategy,
-                    real-time segmentation, data collection standards, and
-                    downstream activation patterns.
+                    Led architecture conversations on enterprise AEP
+                    implementations, advising on identity strategy, real time
+                    segmentation, data collection standards, and how audiences get
+                    activated downstream.
                   </li><br />
 
                   <li>
-                    Architected real-time personalization pipelines using AEP
-                    Edge, Web SDK (Alloy), and CMS platforms — handling edge
-                    audience resolution and on-site content variation without
-                    server-side session dependencies.
+                    Built real time personalization pipelines with AEP Edge, Web
+                    SDK (Alloy), and CMS platforms, resolving audiences at the
+                    edge and changing on site content without relying on server
+                    side sessions.
                   </li><br />
 
                   <li>
-                    Designed integration patterns between CMS platforms,
-                    personalization engines, and customer data platforms to enable
-                    real-time audience-driven experiences across web properties.
+                    Designed how CMS platforms, personalization tools, and CDPs
+                    talk to each other so web experiences can react to audiences
+                    in real time.
                   </li><br />
 
                   <li>
-                    Conducted full Adobe Launch property audits, producing structured
-                    findings and observability frameworks spanning GTM, Launch,
-                    AEP/CJA, and cloud data platforms across multi-team environments.
+                    Ran full Adobe Launch property audits and delivered findings
+                    reports plus monitoring frameworks covering GTM, Launch, AEP,
+                    CJA, and cloud data platforms, working across several teams.
                   </li><br />
 
                   <li>
-                    Worked across XDM schema design, identity graph configuration,
-                    and edge segmentation for large-scale AEP implementations —
-                    including diagnosing authentication state issues, audience
-                    discrepancies, and profile-level data collection gaps.
+                    Worked on XDM schema design, identity graph setup, and edge
+                    segmentation for large AEP implementations, including tracking
+                    down authentication state issues, audience mismatches, and
+                    gaps in profile data collection.
                   </li><br />
 
                   <li>
-                    Defined governance frameworks for enterprise data collection
-                    strategies including data layer standards, schema design,
-                    naming conventions, and QA processes across large digital
-                    ecosystems.
+                    Set governance standards for enterprise data collection,
+                    covering data layer standards, schema design, naming
+                    conventions, and QA.
                   </li><br />
 
                   <li>
-                    Designed consent management architectures mapping CMP
-                    vendor consent objects to AEP's consentStrings schema for
-                    GDPR-compliant deployments.
+                    Designed consent setups that map CMP vendor consent objects to
+                    AEP's consentStrings schema for GDPR compliant rollouts.
                   </li><br />
 
                   <li>
-                    Troubleshot Adobe Target delivery issues across a range of
-                    implementations — including cross-property configuration bleed,
-                    flickerless activity failures, and offer rendering conflicts
-                    introduced by Web SDK migration.
+                    Fixed Adobe Target delivery problems on a range of
+                    implementations, including config leaking across properties,
+                    flicker handling failures, and offer rendering conflicts
+                    caused by Web SDK migrations.
                   </li><br />
 
                   <li>
-                    Diagnosed complex production issues across Adobe Analytics,
-                    Target, and AEP implementations by analyzing Web SDK payloads,
-                    network traffic, identity resolution behavior, and edge
-                    decisioning responses.
+                    Debugged tough production issues in Adobe Analytics, Target,
+                    and AEP by digging into Web SDK payloads, network traffic,
+                    identity resolution, and edge responses.
                   </li><br />
 
                   <li>
-                    Supported large-scale migrations of Adobe Analytics and Adobe
-                    Target implementations across organizations, including
-                    API-driven object migration, configuration validation, and
-                    cross-property dependency analysis.
+                    Supported large Adobe Analytics and Adobe Target migrations
+                    between organizations, including moving objects through the
+                    API, validating configs, and mapping dependencies across
+                    properties.
                   </li><br />
 
                   <li>
-                    Led email channel work including IP warming,
-                    deliverability optimization, and migrating batch
-                    campaigns into API-triggered, event-driven journeys in
+                    Led email work including IP warming, improving deliverability,
+                    and moving batch campaigns over to API triggered journeys in
                     Adobe Journey Optimizer.
                   </li><br />
 
                   <li>
-                    Acted as the technical liaison between marketing stakeholders,
-                    platform architects, and engineering teams to translate
-                    business requirements into scalable technical solutions.
+                    Acted as the go between for marketing stakeholders, platform
+                    architects, and engineering, turning what the business wants
+                    into something the team can actually build.
                   </li>
                 </ul>
               </Container>
@@ -158,22 +154,22 @@ const Resume = () => {
               <Container>
                 <ul>
                   <li>
-                    Adobe Certified Expert — Adobe Campaign Classic Business
+                    Adobe Certified Expert: Adobe Campaign Classic Business
                     Practitioner
                   </li>
                   <li>
-                    Adobe Certified Expert — Adobe Campaign Standard Business
+                    Adobe Certified Expert: Adobe Campaign Standard Business
                     Practitioner
                   </li>
                   <li>
-                    Adobe Certified Expert — Adobe Journey Optimizer Developer
+                    Adobe Certified Expert: Adobe Journey Optimizer Developer
                   </li>
                   <li>
-                    Adobe Certified Expert — Adobe Customer Journey Analytics
+                    Adobe Certified Expert: Adobe Customer Journey Analytics
                     Developer Expert
                   </li>
                   <li>
-                    Adobe Certified Expert — Adobe Experience Platform Business
+                    Adobe Certified Expert: Adobe Experience Platform Business
                     Practitioner
                   </li>
                   {/* <li>
